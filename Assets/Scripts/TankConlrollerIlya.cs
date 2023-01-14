@@ -7,9 +7,9 @@ public class TankConlrollerIlya : MonoBehaviour
 
     public Rigidbody2D rd2d;
     private Vector2 movementVector;
-    public float maxSpeed = 10;
-    public float rotationSpeed = 100;
-    public float turretRotationSpeed = 150;
+    public float maxSpeed = 10; //скорость
+    public float rotationSpeed = 100; //скорость вращения танка
+    public float turretRotationSpeed = 150; //скорость вращения турели
 
     public Transform turretParent;
 
