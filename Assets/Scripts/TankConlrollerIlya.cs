@@ -23,7 +23,6 @@ public class TankConlrollerIlya : MonoBehaviour
         Debug.Log("Shooting");
     }
 
-
     public void HandleMoveBody(Vector2 movementVector)
     {
         this.movementVector = movementVector;
