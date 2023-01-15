@@ -263,9 +263,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rd2d: {fileID: 0}
-  turretRotationSpeed: 300
+  turretRotationSpeed: 100
   turretParent: {fileID: 6828290833629332617}
+  fireDistans: 3
   Player: {fileID: 0}
+  rechargeTimer: 0
+  timerRecharge: 1.5
 --- !u!1 &6855218056395817477
 GameObject:
   m_ObjectHideFlags: 0

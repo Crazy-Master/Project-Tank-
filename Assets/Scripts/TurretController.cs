@@ -6,7 +6,7 @@ public class TurretController : MonoBehaviour
 {
     public Rigidbody2D rd2d;
     private Vector2 movementVector;
-    public float turretRotationSpeed = 150; //скорость вращения турели
+    public float turretRotationSpeed; //скорость вращения турели
 
     public Transform turretParent;
     public float fireDistans = 3.0f;
@@ -38,7 +38,7 @@ public class TurretController : MonoBehaviour
 
             var desiredAngle = Mathf.Atan2(turretDirection.y, turretDirection.x) * Mathf.Rad2Deg;
 
-            var rotatrionStep = turretRotationSpeed * Time.deltaTime;
+            var rotatrionStep = turretRotationSpeed * Time.fixedDeltaTime;
             turretParent.rotation = Quaternion.RotateTowards(turretParent.rotation, Quaternion.Euler(0, 0, desiredAngle - 90), rotatrionStep);
             
             if (isRecharge == false)
