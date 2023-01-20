@@ -1,23 +1,28 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public interface IHasLife
+{
+    void Hp();
+
+}
 public class TurretController : MonoBehaviour
 {
     public Rigidbody2D rd2d;
-    private Vector2 movementVector;
+    private Vector2 _movementVector;
     public float turretRotationSpeed; //скорость вращения турели
 
     public Transform turretParent;
-    public float fireDistans = 3.0f;
-    [SerializeField] private Transform Player;
+    private Transform _player;
 
     public float rechargeTimer;
     public float timerRecharge = 1.5f;
     
-    
+    private List<TankConlrollerIlya> _enemies = new List<TankConlrollerIlya>();
 
-    private bool isRecharge;
+
+
+    private bool _isRecharge;
     //public float bulletDistance; 
 
     private void Awake()
@@ -25,38 +30,77 @@ public class TurretController : MonoBehaviour
         rd2d = GetComponent<Rigidbody2D>();
     }
     
-    void Start()
-    {
-        
-    }
 
     public void FixedUpdate()
     {
-        if (Vector2.Distance(turretParent.position, Player.position) < fireDistans)
+        if (_enemies.Count > 0)
         {
-            var turretDirection = Player.position - turretParent.position;
-
-            var desiredAngle = Mathf.Atan2(turretDirection.y, turretDirection.x) * Mathf.Rad2Deg;
-
-            var rotatrionStep = turretRotationSpeed * Time.fixedDeltaTime;
-            turretParent.rotation = Quaternion.RotateTowards(turretParent.rotation, Quaternion.Euler(0, 0, desiredAngle - 90), rotatrionStep);
-            
-            if (isRecharge == false)
+            if (_player != null)
             {
-                Debug.Log("Fire");
-                isRecharge = true;
-                rechargeTimer = timerRecharge;
+                var turretDirection = _player.position - turretParent.position;
+
+                    var desiredAngle = Mathf.Atan2(turretDirection.y, turretDirection.x) * Mathf.Rad2Deg;
+
+                    var rotatrionStep = turretRotationSpeed * Time.fixedDeltaTime;
+                    turretParent.rotation = Quaternion.RotateTowards(turretParent.rotation,
+                        Quaternion.Euler(0, 0, desiredAngle - 90), rotatrionStep);
+
+                    if (_isRecharge == false)
+                    {
+                        Debug.Log("FireTurret");
+                        _isRecharge = true;
+                        rechargeTimer = timerRecharge;
+                    }
             }
         }
-        
-        if (isRecharge)
+
+        if (_isRecharge)
         {
             rechargeTimer -= Time.deltaTime;
             if (rechargeTimer < 0)
                 
-                isRecharge = false;
+                _isRecharge = false;
         }
         
     }
+    
+    
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.GetComponent<TankConlrollerIlya>() == null)
+        {
+            return;
+        }
+        
+        _enemies.Add(other.gameObject.GetComponent<TankConlrollerIlya>());
+        _player = ChoosingEnemy();
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        _enemies.Remove(other.gameObject.GetComponent<TankConlrollerIlya>());
+        if (_enemies.Count > 0 && _player == other.gameObject.transform)
+        {
+            _player = ChoosingEnemy();
+        }
+    }
+
+    Transform ChoosingEnemy()
+    {
+        int minHp = 999;
+        TankConlrollerIlya tankCont = null;
+        foreach (var variable in _enemies)
+        {
+            var hp = variable.publicHP;
+            if (minHp > hp)
+            {
+                tankCont = variable;
+                minHp = hp;
+            }
+        }
+
+        if (tankCont is not null) return tankCont.transform;
+        return null;
+    }
 }

@@ -129,6 +129,7 @@ GameObject:
   - component: {fileID: 3997842703393606844}
   - component: {fileID: 1390167929093824401}
   - component: {fileID: 7551267077680977895}
+  - component: {fileID: 4949985710205977720}
   m_Layer: 0
   m_Name: Tower
   m_TagString: Untagged
@@ -269,6 +270,22 @@ MonoBehaviour:
   Player: {fileID: 0}
   rechargeTimer: 0
   timerRecharge: 1.5
+--- !u!58 &4949985710205977720
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6642648298583989419}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 3
 --- !u!1 &6855218056395817477
 GameObject:
   m_ObjectHideFlags: 0

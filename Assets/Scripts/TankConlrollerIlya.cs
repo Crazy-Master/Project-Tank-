@@ -1,8 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TankConlrollerIlya : MonoBehaviour
+public class TankConlrollerIlya : MonoBehaviour, IHasLife
 {
 
     public Rigidbody2D rd2d;
@@ -10,8 +11,15 @@ public class TankConlrollerIlya : MonoBehaviour
     public float maxSpeed = 10; //скорость
     public float rotationSpeed = 100; //скорость вращения танка
     public float turretRotationSpeed = 150; //скорость вращения турели
-
+    public int hp = 10;
+    public int publicHP;
+    
     public Transform turretParent;
+
+    private void Start()
+    {
+        publicHP = hp;
+    }
 
     private void Awake()
     {
@@ -42,5 +50,10 @@ public class TankConlrollerIlya : MonoBehaviour
     {
         rd2d.velocity = (Vector2)transform.up * movementVector.y * maxSpeed * Time.fixedDeltaTime;
         rd2d.MoveRotation(transform.rotation * Quaternion.Euler(0, 0, -movementVector.x * rotationSpeed * Time.fixedDeltaTime));
+    }
+
+    public void Hp()
+    {
+        
     }
 }
