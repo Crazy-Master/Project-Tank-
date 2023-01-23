@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1728386313743386551
+--- !u!1 &1119539602654153763
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,29 +8,28 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6828290833629332617}
+  - component: {fileID: 2273325128583003469}
   m_Layer: 0
-  m_Name: TurretParent
+  m_Name: FirePoint(1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6828290833629332617
+--- !u!4 &2273325128583003469
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1728386313743386551}
+  m_GameObject: {fileID: 1119539602654153763}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.14, y: 0.36, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 6309134928837224150}
-  m_Father: {fileID: 548616069409356463}
-  m_RootOrder: 1
+  m_Children: []
+  m_Father: {fileID: 6309134928837224150}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5033807678093643517
 GameObject:
@@ -42,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6309134928837224150}
   - component: {fileID: 8751197151387997828}
+  - component: {fileID: 3419329490739322152}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -57,12 +57,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5033807678093643517}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.11, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6828290833629332617}
-  m_RootOrder: 0
+  m_Children:
+  - {fileID: 2273325128583003469}
+  - {fileID: 5819747683777566163}
+  m_Father: {fileID: 548616069409356463}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8751197151387997828
 SpriteRenderer:
@@ -116,6 +118,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3419329490739322152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5033807678093643517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e727de5f3145d8e44ab003d66be126f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 2468806360887481156, guid: 97b5ec8fda9bc39428664af3ddb97abb, type: 3}
+  firePoint: {fileID: 2273325128583003469}
+--- !u!1 &5842191904992183654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5819747683777566163}
+  m_Layer: 0
+  m_Name: FirePoint(2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5819747683777566163
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5842191904992183654}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.14, y: 0.36, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6309134928837224150}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6642648298583989419
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,13 +310,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9427eae82d178ab498b749cc0a648de0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rd2d: {fileID: 0}
+  rd2d: {fileID: 1390167929093824401}
   turretRotationSpeed: 100
-  turretParent: {fileID: 6828290833629332617}
-  fireDistans: 3
-  Player: {fileID: 0}
+  turretParent: {fileID: 548616069409356463}
   rechargeTimer: 0
   timerRecharge: 1.5
+  towerGan: {fileID: 3419329490739322152}
 --- !u!58 &4949985710205977720
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -315,7 +361,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 437130311795329411}
-  - {fileID: 6828290833629332617}
+  - {fileID: 6309134928837224150}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

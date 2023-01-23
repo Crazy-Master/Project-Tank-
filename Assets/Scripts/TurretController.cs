@@ -10,15 +10,18 @@ public class TurretController : MonoBehaviour
 {
     public Rigidbody2D rd2d;
     private Vector2 _movementVector;
-    public float turretRotationSpeed; //скорость вращения турели
-
+    public float turretRotationSpeed;
     public Transform turretParent;
     private Transform _player;
 
     public float rechargeTimer;
-    public float timerRecharge = 1.5f;
+    public float timerRecharge = 0.7f;
     
     private List<TankConlrollerIlya> _enemies = new List<TankConlrollerIlya>();
+
+    public TowerGan towerGan;
+    
+    
 
 
 
@@ -38,30 +41,28 @@ public class TurretController : MonoBehaviour
             if (_player != null)
             {
                 var turretDirection = _player.position - turretParent.position;
+                
+                var desiredAngle = Mathf.Atan2(turretDirection.y, turretDirection.x) * Mathf.Rad2Deg;
 
-                    var desiredAngle = Mathf.Atan2(turretDirection.y, turretDirection.x) * Mathf.Rad2Deg;
+                var rotatrionStep = turretRotationSpeed * Time.fixedDeltaTime;
+                turretParent.rotation = Quaternion.RotateTowards(turretParent.rotation,
+                Quaternion.Euler(0, 0, desiredAngle - 90), rotatrionStep);
 
-                    var rotatrionStep = turretRotationSpeed * Time.fixedDeltaTime;
-                    turretParent.rotation = Quaternion.RotateTowards(turretParent.rotation,
-                        Quaternion.Euler(0, 0, desiredAngle - 90), rotatrionStep);
-
-                    if (_isRecharge == false)
-                    {
-                        Debug.Log("FireTurret");
-                        _isRecharge = true;
-                        rechargeTimer = timerRecharge;
-                    }
+                if (_isRecharge == false)
+                {
+                    towerGan.Strike();
+                    _isRecharge = true;
+                    rechargeTimer = timerRecharge;
+                }
             }
         }
 
-        if (_isRecharge)
-        {
-            rechargeTimer -= Time.deltaTime;
-            if (rechargeTimer < 0)
+        if (!_isRecharge) return;
+        rechargeTimer -= Time.deltaTime;
+        if (rechargeTimer < 0)
                 
-                _isRecharge = false;
-        }
-        
+            _isRecharge = false;
+
     }
     
     
