@@ -11,6 +11,9 @@ public class PlayerInputIlya : MonoBehaviour
     public UnityEvent OnShoot = new UnityEvent();
     public UnityEvent<Vector2> OnMoveBody = new UnityEvent<Vector2>();
     public UnityEvent<Vector2> OnMoveTurret = new UnityEvent<Vector2>();
+    public float timeReload;
+    private bool reload;
+    private float currentTimeReload;
 
     private void Awake()
     {
@@ -24,13 +27,23 @@ public class PlayerInputIlya : MonoBehaviour
         GetBodyMovement();
         GetTurretMovement();
         GetShootingInput();
+
+
+        currentTimeReload -= Time.deltaTime;
+       // Debug.Log(currentTimeReload);
+        if (currentTimeReload < 0)
+        {
+            reload = true;
+        }
     }
 
     private void GetShootingInput()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && reload)
         {
             OnShoot?.Invoke();
+            reload = false;
+            currentTimeReload = timeReload;
         }
     }
 
