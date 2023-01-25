@@ -89,11 +89,11 @@ public class TurretController : MonoBehaviour
 
     Transform ChoosingEnemy()
     {
-        int minHp = 999;
+        float minHp = 999;
         TankConlrollerIlya tankCont = null;
         foreach (var variable in _enemies)
         {
-            var hp = variable.publicHP;
+            var hp = variable.HpPlayerManager;
             if (minHp > hp)
             {
                 tankCont = variable;
