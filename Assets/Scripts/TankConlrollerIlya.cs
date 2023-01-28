@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TankConlrollerIlya : MonoBehaviour
+public class TankConlrollerIlya : HpObject
 {
 
     public Rigidbody2D rd2d;
@@ -17,23 +17,23 @@ public class TankConlrollerIlya : MonoBehaviour
 
     public GameObject projectilePrefab;
 
-    private float _currentHp=100;
-   
-
-    public float HpPlayerManager
-    {
-        get { return _currentHp; }
-
-        set { _currentHp -=value;
-            Debug.Log("damage=" + value);
-
-            if (_currentHp<0)
-            {
-                Destroy(gameObject);
-            }
-
-        } 
-    }
+    // private float _currentHp=100;
+    //
+    //
+    // public float HpPlayerManager
+    // {
+    //     get { return _currentHp; }
+    //
+    //     set { _currentHp -=value;
+    //         Debug.Log("damage=" + value);
+    //
+    //         if (_currentHp<0)
+    //         {
+    //             Destroy(gameObject);
+    //         }
+    //
+    //     } 
+    // }
 
    
     private void Awake()

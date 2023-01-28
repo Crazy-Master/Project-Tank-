@@ -6,7 +6,7 @@ public interface IHasLife
     void Hp();
 
 }
-public class TurretController : MonoBehaviour
+public class TurretController : HpObject
 {
     public Rigidbody2D rd2d;
     private Vector2 _movementVector;
@@ -20,8 +20,29 @@ public class TurretController : MonoBehaviour
     private List<TankConlrollerIlya> _enemies = new List<TankConlrollerIlya>();
 
     public TowerGan towerGan;
+
     
     
+    
+   
+    
+    // private float _currentHpTurret=100;
+    //
+    //
+    // public float HpTurretManager
+    // {
+    //     get { return _currentHpTurret; }
+    //
+    //     set { _currentHpTurret -=value;
+    //         Debug.Log("damage=" + value);
+    //
+    //         if (_currentHpTurret<0)
+    //         {
+    //             Destroy(gameObject);
+    //         }
+    //
+    //     } 
+    // }
 
 
 
@@ -46,7 +67,7 @@ public class TurretController : MonoBehaviour
 
                 var rotatrionStep = turretRotationSpeed * Time.fixedDeltaTime;
                 turretParent.rotation = Quaternion.RotateTowards(turretParent.rotation,
-                Quaternion.Euler(0, 0, desiredAngle - 90), rotatrionStep);
+                Quaternion.Euler(0, 0, desiredAngle), rotatrionStep);
 
                 if (_isRecharge == false)
                 {
@@ -62,7 +83,7 @@ public class TurretController : MonoBehaviour
         if (rechargeTimer < 0)
                 
             _isRecharge = false;
-
+        
     }
     
     
@@ -89,11 +110,11 @@ public class TurretController : MonoBehaviour
 
     Transform ChoosingEnemy()
     {
-        int minHp = 999;
+        float minHp = 999;
         TankConlrollerIlya tankCont = null;
         foreach (var variable in _enemies)
         {
-            var hp = variable.publicHP;
+            var hp = variable.HpObjectManager;
             if (minHp > hp)
             {
                 tankCont = variable;

@@ -10,6 +10,7 @@ public class ProjectileIlya : MonoBehaviour
     
     void Start()
     {
+        
         rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
@@ -24,7 +25,7 @@ public class ProjectileIlya : MonoBehaviour
         TankConlrollerIlya tankControl = other.gameObject.GetComponent<TankConlrollerIlya>();
         if (tankControl)
         {
-            tankControl.HpPlayerManager=bulletDamage;
+            tankControl.HpObjectManager=bulletDamage;
         }
         Destroy(gameObject);
     }

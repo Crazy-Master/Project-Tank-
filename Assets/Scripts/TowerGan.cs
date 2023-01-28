@@ -8,25 +8,37 @@ public class TowerGan : MonoBehaviour
     public GameObject bullet;
     private Vector2 lookDirection = new Vector2(0, 1);
     private Transform firePoint;
-    public Transform firePoint1;
-    public Transform firePoint2;
-    
-    
-    
+    public Transform firePointRight;
+    public Transform firePointLeft;
+    private Animator turret_Animator;
+
+    private void Awake()
+    {
+        turret_Animator = GetComponent<Animator>();
+    }
+
 
     public void Strike()
     {
-        if (firePoint == firePoint1)
+        if (firePoint == firePointRight)
         {
-            firePoint = firePoint2;
+            firePoint = firePointLeft;
         }
         else
         {
-            firePoint = firePoint1;
+            firePoint = firePointRight;
         }
         GameObject bulletObject = Instantiate(bullet, firePoint.position, firePoint.rotation);
         Rigidbody2D rb2d = bulletObject.GetComponent<Rigidbody2D>();
         rb2d.AddForce(firePoint.up * 20, ForceMode2D.Impulse);
+        if (firePoint == firePointRight)
+        {
+            turret_Animator.SetTrigger("RightGun");
+        }
+        else
+        {
+            turret_Animator.SetTrigger("LeftGun");
+        }
 
         //bulletObject.GetComponent<BulletController>().Launch(lookDirection, 300);
         //bulletObject.GetComponent<BulletController>().Debag();

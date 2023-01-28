@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1119539602654153763}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.14, y: 0.36, z: 0}
+  m_LocalPosition: {x: -0.14, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -131,7 +131,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 2468806360887481156, guid: 97b5ec8fda9bc39428664af3ddb97abb, type: 3}
-  firePoint: {fileID: 2273325128583003469}
+  firePointRight: {fileID: 2273325128583003469}
+  firePointLeft: {fileID: 5819747683777566163}
 --- !u!1 &5842191904992183654
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,7 +157,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5842191904992183654}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.14, y: 0.36, z: 0}
+  m_LocalPosition: {x: 0.14, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -312,7 +313,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rd2d: {fileID: 1390167929093824401}
   turretRotationSpeed: 100
-  turretParent: {fileID: 548616069409356463}
+  turretParent: {fileID: 6309134928837224150}
   rechargeTimer: 0
   timerRecharge: 1.5
   towerGan: {fileID: 3419329490739322152}
@@ -343,7 +344,7 @@ GameObject:
   - component: {fileID: 548616069409356463}
   m_Layer: 0
   m_Name: TurretNPS
-  m_TagString: Untagged
+  m_TagString: Damaged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

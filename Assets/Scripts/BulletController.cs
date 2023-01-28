@@ -7,10 +7,14 @@ using UnityEngine;
 public class BulletController : MonoBehaviour
 {
     public float timerDestroy;
+    
 
-    private void Start()
+    public float bulletDamageTurret = 5f;
+
+    private void Awake()
     {
         timerDestroy = 5;
+        
     }
 
     private void Update()
@@ -19,9 +23,14 @@ public class BulletController : MonoBehaviour
         if (timerDestroy < 0) Destroy(gameObject);
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        
         Destroy(gameObject);
+        
+        // if (other.gameObject.CompareTag("Damaged"))
+        // {
+        //     other.gameObject.GetComponent<TankConlrollerIlya>().HpPlayerManager=bulletDamageTurret;
+        // }
+        // Destroy(gameObject);
     }
 }

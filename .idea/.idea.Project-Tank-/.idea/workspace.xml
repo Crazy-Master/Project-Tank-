@@ -3,21 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="2d7b8136-ae43-4042-ad4c-dbf3b914d853" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Tank-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Tank-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/PNG/Default size/bulletGreen3_outline.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/PNG/Default size/bulletGreen3_outline.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/PNG/Default size/bulletRed3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/PNG/Default size/bulletRed3.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/PNG/Default size/bulletRed3_outline.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/PNG/Default size/bulletRed3_outline.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/PNG/Retina/bulletRed1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/PNG/Retina/bulletRed1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/PNG/Turret/Gun.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/PNG/Turret/Gun.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/Bush_4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/Bush_4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/wooden-box.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/wooden-box.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/PNG/Retina/specialBarrel5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/PNG/Retina/specialBarrel5.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/TurretNPS.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TurretNPS.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levle-1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levle-1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levle-2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levle-2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BulletController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BulletController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProjectileIlya.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProjectileIlya.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TankConlrollerIlya.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TankConlrollerIlya.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TowerGan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TowerGan.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TurretController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TurretController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +29,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BulletController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TowerGan.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Ruby/Ruby Tutorial/Assets/Scripts/RubyController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HpObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BoxController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -110,6 +108,9 @@
       <workItem from="1674375370613" duration="5342000" />
       <workItem from="1674381319224" duration="13611000" />
       <workItem from="1674414748103" duration="867000" />
+      <workItem from="1674752534158" duration="4079000" />
+      <workItem from="1674910902421" duration="3649000" />
+      <workItem from="1674918863565" duration="5667000" />
     </task>
     <servers />
   </component>
