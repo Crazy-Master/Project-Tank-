@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TowerGan : MonoBehaviour
+public class TowerGan : HpObject
 {
     public GameObject bullet;
     private Vector2 lookDirection = new Vector2(0, 1);
@@ -14,6 +14,7 @@ public class TowerGan : MonoBehaviour
 
     private void Awake()
     {
+        HpObjectManager = -10;
         turret_Animator = GetComponent<Animator>();
     }
 

@@ -38,6 +38,7 @@ public class TankConlrollerIlya : HpObject
    
     private void Awake()
     {
+        HpObjectManager = -10;
         rd2d = GetComponent<Rigidbody2D>();
     }
 

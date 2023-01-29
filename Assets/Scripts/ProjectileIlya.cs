@@ -22,10 +22,10 @@ public class ProjectileIlya : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        TankConlrollerIlya tankControl = other.gameObject.GetComponent<TankConlrollerIlya>();
-        if (tankControl)
+        HpObject hpObject = other.gameObject.GetComponent<HpObject>();
+        if (hpObject)
         {
-            tankControl.HpObjectManager=bulletDamage;
+            hpObject.HpObjectManager=bulletDamage;
         }
         Destroy(gameObject);
     }

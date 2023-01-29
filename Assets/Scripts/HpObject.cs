@@ -6,8 +6,6 @@ public class HpObject : MonoBehaviour
 {
     private float _currentHpObject;
 
-    public float hp;
-
     public float HpObjectManager
     {
         get { return _currentHpObject; }
@@ -15,7 +13,7 @@ public class HpObject : MonoBehaviour
         set { _currentHpObject -=value;
             Debug.Log("damage=" + value);
     
-            if (_currentHpObject<0)
+            if (_currentHpObject<=0)
             {
                 Destroy(gameObject);
             }

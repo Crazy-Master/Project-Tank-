@@ -1,12 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IHasLife
-{
-    void Hp();
 
-}
-public class TurretController : HpObject
+public class TurretController : MonoBehaviour
 {
     public Rigidbody2D rd2d;
     private Vector2 _movementVector;
@@ -69,12 +65,12 @@ public class TurretController : HpObject
                 turretParent.rotation = Quaternion.RotateTowards(turretParent.rotation,
                 Quaternion.Euler(0, 0, desiredAngle), rotatrionStep);
 
-                if (_isRecharge == false)
+                
+                if (Quaternion.Angle(turretParent.rotation,Quaternion.Euler(0, 0, desiredAngle)) < 15)
                 {
-                    towerGan.Strike();
-                    _isRecharge = true;
-                    rechargeTimer = timerRecharge;
+                    TowerGan();
                 }
+                
             }
         }
 
@@ -124,5 +120,15 @@ public class TurretController : HpObject
 
         if (tankCont is not null) return tankCont.transform;
         return null;
+    }
+
+    private void TowerGan()
+    {
+        if (_isRecharge == false)
+        {
+            towerGan.Strike();
+            _isRecharge = true;
+            rechargeTimer = timerRecharge;
+        }
     }
 }

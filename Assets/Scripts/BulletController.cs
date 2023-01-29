@@ -25,12 +25,12 @@ public class BulletController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
+        //if (other.gameObject.CompareTag("Damaged"))
+        HpObject hpObject = other.gameObject.GetComponent<HpObject>();
+        if (hpObject)
+        {
+            hpObject.HpObjectManager=bulletDamageTurret;
+        }
         Destroy(gameObject);
-        
-        // if (other.gameObject.CompareTag("Damaged"))
-        // {
-        //     other.gameObject.GetComponent<TankConlrollerIlya>().HpPlayerManager=bulletDamageTurret;
-        // }
-        // Destroy(gameObject);
     }
 }
