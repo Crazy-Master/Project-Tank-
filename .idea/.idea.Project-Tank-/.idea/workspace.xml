@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2d7b8136-ae43-4042-ad4c-dbf3b914d853" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Tank-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Tank-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BulletController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BulletController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HpObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HpObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProjectileIlya.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProjectileIlya.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TankConlrollerIlya.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TankConlrollerIlya.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TurretController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TurretController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levle-1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levle-1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +100,7 @@
       <workItem from="1674752534158" duration="4079000" />
       <workItem from="1674910902421" duration="3649000" />
       <workItem from="1674918863565" duration="5667000" />
-      <workItem from="1675003507301" duration="7383000" />
+      <workItem from="1675003507301" duration="8187000" />
     </task>
     <servers />
   </component>
