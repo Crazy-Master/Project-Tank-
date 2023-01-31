@@ -17,23 +17,26 @@ public class TankConlrollerIlya : HpObject
 
     public GameObject projectilePrefab;
 
-    // private float _currentHp=100;
-    //
-    //
-    // public float HpPlayerManager
-    // {
-    //     get { return _currentHp; }
-    //
-    //     set { _currentHp -=value;
-    //         Debug.Log("damage=" + value);
-    //
-    //         if (_currentHp<0)
-    //         {
-    //             Destroy(gameObject);
-    //         }
-    //
-    //     } 
-    // }
+    private float _currentHp=100;
+   
+
+    public float HpPlayerManager
+    {
+        get { return _currentHp; }
+
+        set { _currentHp -=value;
+            
+            Debug.Log("damage=" + value);
+
+            if (_currentHp<0)
+            {
+                Destroy(gameObject);
+            }
+            UI.instance.SetValue(_currentHp /.......);
+        } 
+       
+    }
+
 
    
     private void Awake()
@@ -52,8 +55,6 @@ public class TankConlrollerIlya : HpObject
     {
         GameObject projectileOdject = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
         var bullet = projectileOdject.GetComponent<Rigidbody2D>();
-     //   var bulletStart = projectileOdject.GetComponent<ProjectileIlya>();
-     //   bulletStart.bulletStartPos = this.transform;
         bullet.AddForce(firePoint.up * speedBullet, ForceMode2D.Impulse);
         Debug.Log("Shooting");
         

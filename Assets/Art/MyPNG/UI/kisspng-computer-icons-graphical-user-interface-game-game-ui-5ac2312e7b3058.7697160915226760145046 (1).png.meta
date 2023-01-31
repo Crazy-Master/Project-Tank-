@@ -1,0 +1,652 @@
+fileFormatVersion: 2
+guid: 97241b4f60c560a4c9584c33b56a201b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046
+        (1)_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 349
+        width: 204
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06b048ab9b4418342ae95a906d9dbcc3
+      internalID: -1152714707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046
+        (1)_1
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 361
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe272125a6e5db4aa251bf47950add0
+      internalID: 688390529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046
+        (1)_2
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 361
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf79d0531e4f6bb448941cb73e26aa17
+      internalID: -1618880374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046
+        (1)_3
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 361
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d73e8f7df6ca9f468db2cdd83ea2671
+      internalID: -1266339328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046
+        (1)_4
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 359
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d77bd05010f59419c64fc8921eb941
+      internalID: 2105779593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046
+        (1)_5
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 264
+        width: 210
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7cc9545a46d6c4b82b03190a719cc1
+      internalID: -382787034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046
+        (1)_6
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 301
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb7d97698a4ae0b49ac2be002e0d6240
+      internalID: -724180421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046
+        (1)_7
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 301
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df30149462631549a7d956d83368bf9
+      internalID: -1995787586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046
+        (1)_8
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 301
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e727e7361831544bbd9a4f6635d6ca
+      internalID: -1110021223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046
+        (1)_9
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 301
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e00bf5e7ce3c244b950298f3a1bc8c
+      internalID: 744151811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046
+        (1)_10
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 196
+        width: 59
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27e5143c03d6224492d1cf45236c278
+      internalID: -1967962447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046
+        (1)_11
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 197
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b4d2957597da354cad2c0223f109e1c
+      internalID: 1923154847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046
+        (1)_12
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 242
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67592886f54f96642a8c436a8a03ecf2
+      internalID: -398114837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046
+        (1)_13
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 242
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8314151e718799a4ab226acaa130b1eb
+      internalID: 1336769535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046
+        (1)_14
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 242
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7783e1d816c009d49bd8ef0a385c1c85
+      internalID: -2041583204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046
+        (1)_15
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 242
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 816d1d48e8d1b1a45af624b567d894b7
+      internalID: -200704471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046
+        (1)_16
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 187
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f49173f57b41d841b329663182463a3
+      internalID: 1293909873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046
+        (1)_17
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 186
+        width: 125
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9974a7de8a037941b23f4bec54bdfa0
+      internalID: -1236792530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046
+        (1)_18
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 90
+        width: 75
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c42f95f773eb341a2b55735cc0ac4a
+      internalID: 1480405417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046
+        (1)_19
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 90
+        width: 75
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32414414fc2df894dacd5d88be2de0d3
+      internalID: 301411306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046
+        (1)_20
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 129
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204705363049cff4f927ebde26c56a9a
+      internalID: 588288752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046
+        (1)_21
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 129
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dae98ae5f0489142a1864acc01b0575
+      internalID: 1794238245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046
+        (1)_22
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 86
+        width: 296
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84428fa82e9b414084f1ea187a886c5
+      internalID: -1878457172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046 (1)_18: 1480405417
+      kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046 (1)_2: -1618880374
+      kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046 (1)_4: 2105779593
+      kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046 (1)_5: -382787034
+      kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046 (1)_6: -724180421
+      kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046 (1)_21: 1794238245
+      kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046 (1)_16: 1293909873
+      kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046 (1)_11: 1923154847
+      kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046 (1)_15: -200704471
+      kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046 (1)_3: -1266339328
+      kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046 (1)_1: 688390529
+      kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046 (1)_7: -1995787586
+      kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046 (1)_8: -1110021223
+      kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046 (1)_19: 301411306
+      kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046 (1)_10: -1967962447
+      kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046 (1)_13: 1336769535
+      kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046 (1)_0: -1152714707
+      kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046 (1)_14: -2041583204
+      kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046 (1)_22: -1878457172
+      kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046 (1)_12: -398114837
+      kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046 (1)_9: 744151811
+      kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046 (1)_20: 588288752
+      kisspng-computer-icons-graphical-user-interface-game-game-ui-5ac2312e7b3058.7697160915226760145046 (1)_17: -1236792530
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
