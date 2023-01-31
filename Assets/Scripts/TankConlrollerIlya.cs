@@ -18,24 +18,7 @@ public class TankConlrollerIlya : HpObject
     public GameObject projectilePrefab;
 
     private float _currentHp=100;
-   
-
-    public float HpPlayerManager
-    {
-        get { return _currentHp; }
-
-        set { _currentHp -=value;
-            
-            Debug.Log("damage=" + value);
-
-            if (_currentHp<0)
-            {
-                Destroy(gameObject);
-            }
-            UI.instance.SetValue(_currentHp /.......);
-        } 
-       
-    }
+    
 
 
    
