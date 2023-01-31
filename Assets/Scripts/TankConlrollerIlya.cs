@@ -16,23 +16,16 @@ public class TankConlrollerIlya : HpObject
     public Transform firePoint;
 
     public GameObject projectilePrefab;
-
-    private float _currentHp=100;
+    
     
 
 
    
     private void Awake()
     {
-        HpObjectManager = -10;
         rd2d = GetComponent<Rigidbody2D>();
     }
-
-   
-    private float SetHpPlayer (float hp)
-    {
-        return hp;
-    }
+    
 
     public void HandleShoot()
     {
@@ -65,4 +58,15 @@ public class TankConlrollerIlya : HpObject
         rd2d.MoveRotation(transform.rotation * Quaternion.Euler(0, 0, -movementVector.x * rotationSpeed * Time.fixedDeltaTime));
     }
 
+    public override void SetDamage(float damage)
+    {
+        base.SetDamage(damage);
+        UI.instance.SetValue(_maxHp);
+    }
+    public override void SetHeal(float heal)
+    {
+        base.SetDamage(heal);
+        UI.instance.SetValue(_maxHp);
+    }
 }
+

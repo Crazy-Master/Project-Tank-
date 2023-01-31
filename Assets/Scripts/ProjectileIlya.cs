@@ -11,13 +11,7 @@ public class ProjectileIlya : MonoBehaviour
     void Start()
     {
         
-        rigidbody2d = GetComponent<Rigidbody2D>();
-    }
-
-    public void Launch(Vector2 direction, float force)
-    {
-        rigidbody2d.AddForce(direction * force);
-
+       //rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -25,7 +19,7 @@ public class ProjectileIlya : MonoBehaviour
         HpObject hpObject = other.gameObject.GetComponent<HpObject>();
         if (hpObject)
         {
-            hpObject.HpObjectManager=bulletDamage;
+            hpObject.SetDamage(bulletDamage);
         }
         Destroy(gameObject);
     }

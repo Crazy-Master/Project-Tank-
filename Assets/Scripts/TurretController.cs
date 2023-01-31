@@ -16,31 +16,7 @@ public class TurretController : MonoBehaviour
     private List<TankConlrollerIlya> _enemies = new List<TankConlrollerIlya>();
 
     public TowerGan towerGan;
-
     
-    
-    
-   
-    
-    // private float _currentHpTurret=100;
-    //
-    //
-    // public float HpTurretManager
-    // {
-    //     get { return _currentHpTurret; }
-    //
-    //     set { _currentHpTurret -=value;
-    //         Debug.Log("damage=" + value);
-    //
-    //         if (_currentHpTurret<0)
-    //         {
-    //             Destroy(gameObject);
-    //         }
-    //
-    //     } 
-    // }
-
-
 
     private bool _isRecharge;
     //public float bulletDistance; 
@@ -68,7 +44,7 @@ public class TurretController : MonoBehaviour
                 
                 if (Quaternion.Angle(turretParent.rotation,Quaternion.Euler(0, 0, desiredAngle)) < 15)
                 {
-                    TowerGan();
+                    TowerGun();
                 }
                 
             }
@@ -122,13 +98,15 @@ public class TurretController : MonoBehaviour
         return null;
     }
 
-    private void TowerGan()
+    private void TowerGun()
     {
         if (_isRecharge == false)
         {
-            towerGan.Strike();
+            towerGan.Shot();
             _isRecharge = true;
             rechargeTimer = timerRecharge;
         }
     }
+    
+    
 }
