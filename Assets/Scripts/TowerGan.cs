@@ -12,14 +12,14 @@ public class TowerGan : HpObject
     public Transform firePointLeft;
     private Animator turret_Animator;
 
+    public GameObject platform;
     private void Awake()
     {
-        HpObjectManager = -10;
         turret_Animator = GetComponent<Animator>();
     }
 
 
-    public void Strike()
+    public void Shot()
     {
         if (firePoint == firePointRight)
         {
@@ -43,5 +43,13 @@ public class TowerGan : HpObject
 
         //bulletObject.GetComponent<BulletController>().Launch(lookDirection, 300);
         //bulletObject.GetComponent<BulletController>().Debag();
+    }
+    public override void SetDamage(float damage)
+    {
+        _currentHpObject -= damage;
+        if (_currentHpObject <= 0)
+        {
+            Destroy(platform);
+        }
     }
 }

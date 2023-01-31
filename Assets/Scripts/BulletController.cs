@@ -29,7 +29,7 @@ public class BulletController : MonoBehaviour
         HpObject hpObject = other.gameObject.GetComponent<HpObject>();
         if (hpObject)
         {
-            hpObject.HpObjectManager=bulletDamageTurret;
+            hpObject.SetDamage(bulletDamageTurret);
         }
         Destroy(gameObject);
     }
