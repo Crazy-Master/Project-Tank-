@@ -25,15 +25,18 @@ public class TankConlrollerIlya : MonoBehaviour
         get { return _currentHp; }
 
         set { _currentHp -=value;
+            
             Debug.Log("damage=" + value);
 
             if (_currentHp<0)
             {
                 Destroy(gameObject);
             }
-
+            UI.instance.SetValue(_currentHp /.......);
         } 
+       
     }
+
 
    
     private void Awake()
@@ -51,8 +54,6 @@ public class TankConlrollerIlya : MonoBehaviour
     {
         GameObject projectileOdject = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
         var bullet = projectileOdject.GetComponent<Rigidbody2D>();
-     //   var bulletStart = projectileOdject.GetComponent<ProjectileIlya>();
-     //   bulletStart.bulletStartPos = this.transform;
         bullet.AddForce(firePoint.up * speedBullet, ForceMode2D.Impulse);
         Debug.Log("Shooting");
         
