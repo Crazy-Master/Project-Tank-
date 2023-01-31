@@ -5,6 +5,7 @@ using UnityEngine;
 public class HpObject : MonoBehaviour
 {
     private float _currentHpObject;
+    [SerializeField] private float _maxHp = 20;
 
     public float HpObjectManager
     {
@@ -17,7 +18,7 @@ public class HpObject : MonoBehaviour
             {
                 Destroy(gameObject);
             }
-    
+            //UI.instance.SetValue(_maxHp);
         } 
     }
 }
