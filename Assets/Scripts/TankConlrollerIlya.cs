@@ -11,11 +11,13 @@ public class TankConlrollerIlya : HpObject
     public float rotationSpeed = 100; //скорость вращения танка
     public float turretRotationSpeed = 150; //скорость вращения турели
     public float speedBullet;
+    private float smokeStep=1;   //количество дыма
 
     public Transform turretParent;
     public Transform firePoint;
 
     public GameObject projectilePrefab;
+    public ParticleSystem smokeEffect;
     
     
 
@@ -39,7 +41,15 @@ public class TankConlrollerIlya : HpObject
 
     public void HandleMoveBody(Vector2 movementVector)
     {
-        this.movementVector = movementVector;
+        this.movementVector = movementVector; 
+        if (movementVector.x !=0 || movementVector.y !=0)
+        {
+            SmokeEffect(smokeStep,true);
+        }    
+        else
+        {
+            SmokeEffect(smokeStep);
+        }    
     }
 
     public void HandleTurretMovement(Vector2 pointerPosition)
@@ -61,12 +71,30 @@ public class TankConlrollerIlya : HpObject
     public override void SetDamage(float damage)
     {
         base.SetDamage(damage);
-        UI.instance.SetValue(_maxHp);
+        //  UI.instance.SetValue(_currentHpObject/_maxHp);
+        smokeStep = _maxHp / _currentHpObject*3;
+        SmokeEffect(smokeStep);
     }
     public override void SetHeal(float heal)
     {
-        base.SetDamage(heal);
-        UI.instance.SetValue(_maxHp);
+        base.SetHeal (heal);
+        //  UI.instance.SetValue(_currentHpObject / _maxHp);
+       // smokeStep = _maxHp / _currentHpObject * 3;
+       // var emission = smokeEffect.emission;
+       // emission.rateOverTime = smokeStep;
+    }
+
+    private void SmokeEffect (float valueSmoke, bool gus=false)
+    {
+        var emission = smokeEffect.emission;
+        if (!gus)
+        {
+            emission.rateOverTime = valueSmoke;
+        }
+        else
+        {
+            emission.rateOverTime = valueSmoke*10f;
+        }
     }
 }
 

@@ -3,7 +3,7 @@ using UnityEngine;
 public class HpObject : MonoBehaviour
 {
     protected float _currentHpObject;
-    [SerializeField] protected float _maxHp = 10;
+    [SerializeField]  protected float _maxHp = 100;
 
     public float HpObjectManager
     {

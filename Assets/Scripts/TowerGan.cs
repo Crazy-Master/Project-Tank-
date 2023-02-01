@@ -51,5 +51,6 @@ public class TowerGan : HpObject
         {
             Destroy(platform);
         }
+
     }
 }
