@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2d7b8136-ae43-4042-ad4c-dbf3b914d853" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Tank-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Tank-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TurretNPS2.0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TurretNPS2.0.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BulletController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BulletController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HpObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HpObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProjectileIlya.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProjectileIlya.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TankConlrollerIlya.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TankConlrollerIlya.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TowerGan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TowerGan.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TurretController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TurretController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/asd.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/asd.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +101,8 @@
       <workItem from="1674910902421" duration="3649000" />
       <workItem from="1674918863565" duration="5667000" />
       <workItem from="1675003507301" duration="8187000" />
+      <workItem from="1675359671583" duration="1000" />
+      <workItem from="1675360125275" duration="854000" />
     </task>
     <servers />
   </component>
