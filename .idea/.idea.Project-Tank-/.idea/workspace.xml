@@ -3,8 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="2d7b8136-ae43-4042-ad4c-dbf3b914d853" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Tank-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Tank-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/asd.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/asd.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/PNG/Retina/barrelGreen_top.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/PNG/Retina/barrelGreen_top.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/PNG/Retina/sandbagBeige.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/PNG/Retina/sandbagBeige.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/PNG/Retina/sandbagBeige_open.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/PNG/Retina/sandbagBeige_open.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/PNG/Retina/shotLarge.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/PNG/Retina/shotLarge.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/PNG/Retina/shotLarge.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/PNG/Retina/shotLarge.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/PNG/Retina/shotOrange.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/PNG/Retina/shotOrange.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/SleevEffct.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/SleevEffct.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TurretNPS2.0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TurretNPS2.0.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/bulletRed1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/bulletRed1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BulletController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BulletController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/TowerGan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Turret/TowerGan.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Guards/HIE_Guard_01_TrailGlow_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Guards/HIE_Guard_01_TrailGlow_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_01_Flash_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_01_Flash_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +30,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BulletController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TowerGan.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Ruby/Ruby Tutorial/Assets/Scripts/RubyController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HpObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BoxController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -103,6 +116,9 @@
       <workItem from="1675003507301" duration="8187000" />
       <workItem from="1675359671583" duration="1000" />
       <workItem from="1675360125275" duration="854000" />
+      <workItem from="1675426034955" duration="1401000" />
+      <workItem from="1675436485154" duration="3177000" />
+      <workItem from="1675500673509" duration="6515000" />
     </task>
     <servers />
   </component>

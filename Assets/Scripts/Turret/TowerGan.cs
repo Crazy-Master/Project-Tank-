@@ -11,6 +11,10 @@ public class TowerGan : HpObject
     public Transform firePointRight;
     public Transform firePointLeft;
     private Animator turret_Animator;
+    public ParticleSystem sleevEffectL;
+    public ParticleSystem sleevEffectR;
+    public ParticleSystem muzzleFlashEffectL;
+    public ParticleSystem muzzleFlashEffectR;
 
     public GameObject platform;
     private void Awake()
@@ -31,14 +35,18 @@ public class TowerGan : HpObject
         }
         GameObject bulletObject = Instantiate(bullet, firePoint.position, firePoint.rotation);
         Rigidbody2D rb2d = bulletObject.GetComponent<Rigidbody2D>();
-        rb2d.AddForce(firePoint.up * 20, ForceMode2D.Impulse);
+        rb2d.AddForce(firePoint.up * 2, ForceMode2D.Impulse);
         if (firePoint == firePointRight)
         {
             turret_Animator.SetTrigger("RightGun");
+            muzzleFlashEffectR.Play();
+            sleevEffectR.Play();
         }
         else
         {
             turret_Animator.SetTrigger("LeftGun");
+            muzzleFlashEffectL.Play();
+            sleevEffectL.Play();
         }
 
         //bulletObject.GetComponent<BulletController>().Launch(lookDirection, 300);
