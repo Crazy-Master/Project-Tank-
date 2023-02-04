@@ -59,7 +59,7 @@ public class TankConlrollerIlya : HpObject
         var desiredAngle = Mathf.Atan2(turretDirection.y, turretDirection.x) * Mathf.Rad2Deg;
 
         var rotatrionStep = turretRotationSpeed * Time.deltaTime;
-        turretParent.rotation = Quaternion.RotateTowards(turretParent.rotation, Quaternion.Euler(0, 0, desiredAngle-90), rotatrionStep);
+        turretParent.rotation = Quaternion.RotateTowards(turretParent.rotation, Quaternion.Euler(0, 0, desiredAngle), rotatrionStep);
     }
 
     private void FixedUpdate()
@@ -78,7 +78,7 @@ public class TankConlrollerIlya : HpObject
     public override void SetHeal(float heal)
     {
         base.SetHeal (heal);
-        //  UI.instance.SetValue(_currentHpObject / _maxHp);
+       //  UI.instance.SetValue(_currentHpObject / _maxHp);
        // smokeStep = _maxHp / _currentHpObject * 3;
        // var emission = smokeEffect.emission;
        // emission.rateOverTime = smokeStep;
@@ -93,7 +93,7 @@ public class TankConlrollerIlya : HpObject
         }
         else
         {
-            emission.rateOverTime = valueSmoke*10f;
+            emission.rateOverTime = valueSmoke*2f;
         }
     }
 }
