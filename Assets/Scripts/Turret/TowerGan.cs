@@ -58,8 +58,7 @@ public class TowerGan : HpObject
         if (_currentHpObject <= 0)
         {
             GameObject remnantsObject = Instantiate(remnants, platform.transform.position, platform.transform.rotation);
-            
-            Destroy(platform);
+            remnantsObject.GetComponent<RemnantsExplosion>().DestroyTurret(platform);
         }
 
     }

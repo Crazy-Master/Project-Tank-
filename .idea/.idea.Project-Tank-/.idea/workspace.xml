@@ -3,16 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2d7b8136-ae43-4042-ad4c-dbf3b914d853" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Tank-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Tank-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/sprite muzzle flashes/ef_10.1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/sprite muzzle flashes/ef_10.1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TurretNPS2.0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TurretNPS2.0.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levle-1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levle-1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/RemnantsExplosion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Turret/RemnantsExplosion.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/TowerGan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Turret/TowerGan.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_01_PointGlow_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_01_PointGlow_01.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_01_Smoke_02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_01_Smoke_02.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_02_HazeGlow_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_02_HazeGlow_01.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_02_TrailGlow_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Travis Game Assets/Hit Impact Effects/Materials/Hits/HIE_Hit_02_TrailGlow_01.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,11 +15,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BulletController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Ruby/Ruby Tutorial/Assets/Scripts/RubyController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HpObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BoxController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RemnantsExplosion.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -115,7 +105,7 @@
       <workItem from="1675436485154" duration="3177000" />
       <workItem from="1675500673509" duration="6515000" />
       <workItem from="1675523145066" duration="595000" />
-      <workItem from="1675583865654" duration="1597000" />
+      <workItem from="1675583865654" duration="4577000" />
     </task>
     <servers />
   </component>
