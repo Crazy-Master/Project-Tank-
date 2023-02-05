@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class TowerGan : HpObject
 {
-    public GameObject bullet;
-    private Vector2 lookDirection = new Vector2(0, 1);
     private Transform firePoint;
     public Transform firePointRight;
     public Transform firePointLeft;
@@ -17,6 +15,8 @@ public class TowerGan : HpObject
     public ParticleSystem muzzleFlashEffectR;
 
     public GameObject platform;
+    public GameObject bullet;
+    public GameObject remnants;
     private void Awake()
     {
         turret_Animator = GetComponent<Animator>();
@@ -57,6 +57,8 @@ public class TowerGan : HpObject
         _currentHpObject -= damage;
         if (_currentHpObject <= 0)
         {
+            GameObject remnantsObject = Instantiate(remnants, platform.transform.position, platform.transform.rotation);
+            
             Destroy(platform);
         }
 

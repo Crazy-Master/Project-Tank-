@@ -330,7 +330,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHp: 20
-  bullet: {fileID: 2468806360887481156, guid: 97b5ec8fda9bc39428664af3ddb97abb, type: 3}
   firePointRight: {fileID: 7545873046714521178}
   firePointLeft: {fileID: 9097763221949474867}
   sleevEffectL: {fileID: 6133899217653517342}
@@ -338,6 +337,8 @@ MonoBehaviour:
   muzzleFlashEffectL: {fileID: 678668062696047788}
   muzzleFlashEffectR: {fileID: 1206534683324622543}
   platform: {fileID: 6992021103620616780}
+  bullet: {fileID: 2468806360887481156, guid: 97b5ec8fda9bc39428664af3ddb97abb, type: 3}
+  remnants: {fileID: 269159575623660166, guid: 9d72b65938669c047b2038dbfd3898f5, type: 3}
 --- !u!61 &536914522535701085
 BoxCollider2D:
   m_ObjectHideFlags: 0
