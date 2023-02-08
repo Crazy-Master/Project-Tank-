@@ -6,9 +6,6 @@ using UnityEngine;
 
 public class BulletController : MonoBehaviour
 {
-    // public float timerDestroy = 5f;
-    // public float speedBullet = 2f;
-    // public float bulletDamage = 5f;
     public BulletInfo bulletInfo;
     public float timer;
 
@@ -30,10 +27,8 @@ public class BulletController : MonoBehaviour
     }
     
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(other);
-        //if (other.gameObject.CompareTag("Damaged"))
         HpObject hpObject = other.gameObject.GetComponent<HpObject>();
         if (hpObject)
         {

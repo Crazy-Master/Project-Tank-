@@ -17,6 +17,8 @@ public class TurretController : MonoBehaviour
 
     public TowerGan towerGan;
     public GameObject towerTurret;
+
+   
     
 
     private bool _isRecharge;
@@ -63,7 +65,6 @@ public class TurretController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(other.gameObject.name);
         if (other.gameObject.GetComponent<HpObject>() == null || other.gameObject == towerTurret)
         {
             return;

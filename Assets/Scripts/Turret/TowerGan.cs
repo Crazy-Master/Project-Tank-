@@ -17,9 +17,11 @@ public class TowerGan : HpObject
     public GameObject platform;
     public GameObject bullet;
     public GameObject remnants;
+    
     private void Awake()
     {
         turret_Animator = GetComponent<Animator>();
+        
     }
 
 
@@ -33,6 +35,7 @@ public class TowerGan : HpObject
         {
             firePoint = firePointRight;
         }
+        Debug.Log("123");
         GameObject bulletObject = Instantiate(bullet, firePoint.position, firePoint.rotation);
         if (firePoint == firePointRight)
         {
