@@ -5240,5 +5240,6 @@ MonoBehaviour:
   speedBullet: 20
   turretParent: {fileID: 9171402579270218250}
   firePoint: {fileID: 9171402578289159863}
-  projectilePrefab: {fileID: 9208922802422255748, guid: d22498ac80a255540b6b841e92745401, type: 3}
+  projectilePrefab: {fileID: 9208922802422255748, guid: d22498ac80a255540b6b841e92745401,
+    type: 3}
   smokeEffect: {fileID: 9171402578926983846}

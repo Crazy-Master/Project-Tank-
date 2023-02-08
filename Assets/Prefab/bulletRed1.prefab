@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 222467697668485228}
   - component: {fileID: 2131917069612482752}
   - component: {fileID: -6774313709136349}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: bulletRed1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,8 +73,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1027084981
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a66e1b19d80045f42a110542db0f5933, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -99,7 +99,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -118,7 +118,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -146,4 +146,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbdf9fdb3ecb9774fbacadcf045594a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerDestroy: 0
+  bulletInfo: {fileID: 11400000, guid: 903494512f6d1934ca63d1750616a289, type: 2}
+  timer: 0
