@@ -6,16 +6,27 @@ using UnityEngine;
 
 public class BulletController : MonoBehaviour
 {
-    public float timerDestroy = 5f;
-    
+    // public float timerDestroy = 5f;
+    // public float speedBullet = 2f;
+    // public float bulletDamage = 5f;
+    public BulletInfo bulletInfo;
+    public float timer;
 
-    public float bulletDamageTurret = 5f;
-    
+    private void Awake()
+    {
+        Rigidbody2D rb2d = GetComponent<Rigidbody2D>();
+        rb2d.AddForce(transform.up * bulletInfo.speedBullet, ForceMode2D.Impulse);
+    }
+
+    private void Start()
+    {
+        timer = bulletInfo.timerDestroy;
+    }
 
     private void Update()
     {
-        timerDestroy -= Time.deltaTime;
-        if (timerDestroy < 0) Destroy(gameObject);
+        timer -= Time.deltaTime;
+        if (timer < 0) Destroy(gameObject);
     }
     
 
@@ -26,7 +37,7 @@ public class BulletController : MonoBehaviour
         HpObject hpObject = other.gameObject.GetComponent<HpObject>();
         if (hpObject)
         {
-            hpObject.SetDamage(bulletDamageTurret);
+            hpObject.SetDamage(bulletInfo.bulletDamage);
         }
         Destroy(gameObject);
     }

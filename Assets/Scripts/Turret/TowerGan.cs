@@ -34,8 +34,6 @@ public class TowerGan : HpObject
             firePoint = firePointRight;
         }
         GameObject bulletObject = Instantiate(bullet, firePoint.position, firePoint.rotation);
-        Rigidbody2D rb2d = bulletObject.GetComponent<Rigidbody2D>();
-        rb2d.AddForce(firePoint.up * 2, ForceMode2D.Impulse);
         if (firePoint == firePointRight)
         {
             turret_Animator.SetTrigger("RightGun");
