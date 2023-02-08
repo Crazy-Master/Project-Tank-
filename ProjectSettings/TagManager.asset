@@ -9,7 +9,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Player
+  - 
   - Water
   - UI
   - 
@@ -41,4 +41,34 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 2025577829
+    locked: 0
+  - name: DetailsBottom
+    uniqueID: 3980687085
+    locked: 0
+  - name: Obstacles
+    uniqueID: 3789963131
+    locked: 0
+  - name: Enemies
+    uniqueID: 4029002919
+    locked: 0
+  - name: Player
+    uniqueID: 4287602391
+    locked: 0
+  - name: Items
+    uniqueID: 400993111
+    locked: 0
+  - name: Bullets
+    uniqueID: 1027084981
+    locked: 0
+  - name: SpecialEffects
+    uniqueID: 2558449455
+    locked: 0
+  - name: DetailEffects
+    uniqueID: 1134759365
+    locked: 0
+  - name: UI
+    uniqueID: 1782363763
     locked: 0

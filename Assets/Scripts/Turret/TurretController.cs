@@ -13,9 +13,10 @@ public class TurretController : MonoBehaviour
     public float rechargeTimer;
     public float timerRecharge = 0.7f;
     
-    private List<TankConlrollerIlya> _enemies = new List<TankConlrollerIlya>();
+    private List<HpObject> _enemies = new List<HpObject>();
 
     public TowerGan towerGan;
+    public GameObject towerTurret;
     
 
     private bool _isRecharge;
@@ -62,19 +63,20 @@ public class TurretController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.GetComponent<TankConlrollerIlya>() == null)
+        Debug.Log(other.gameObject.name);
+        if (other.gameObject.GetComponent<HpObject>() == null || other.gameObject == towerTurret)
         {
             return;
         }
         
-        _enemies.Add(other.gameObject.GetComponent<TankConlrollerIlya>());
+        _enemies.Add(other.gameObject.GetComponent<HpObject>());
         _player = ChoosingEnemy();
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        _enemies.Remove(other.gameObject.GetComponent<TankConlrollerIlya>());
-        if (_enemies.Count > 0 && _player == other.gameObject.transform)
+        _enemies.Remove(other.gameObject.GetComponent<HpObject>());
+        if (_enemies.Count > 0 && _player == other.gameObject.transform || other.gameObject == towerTurret)
         {
             _player = ChoosingEnemy();
         }
@@ -83,7 +85,7 @@ public class TurretController : MonoBehaviour
     Transform ChoosingEnemy()
     {
         float minHp = 999;
-        TankConlrollerIlya tankCont = null;
+        HpObject tankCont = null;
         foreach (var variable in _enemies)
         {
             var hp = variable.HpObjectManager;

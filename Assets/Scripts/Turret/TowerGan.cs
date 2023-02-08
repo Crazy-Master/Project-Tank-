@@ -60,6 +60,6 @@ public class TowerGan : HpObject
             GameObject remnantsObject = Instantiate(remnants, platform.transform.position, platform.transform.rotation);
             remnantsObject.GetComponent<RemnantsExplosion>().DestroyTurret(platform);
         }
-
+    
     }
 }

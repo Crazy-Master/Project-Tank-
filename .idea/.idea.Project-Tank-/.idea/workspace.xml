@@ -3,8 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="2d7b8136-ae43-4042-ad4c-dbf3b914d853" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Tank-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Tank-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/RemnantsExplosion.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Turret/RemnantsExplosion.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/AnimationClips/Turret2.0/Turret_Animator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Animations/AnimationClips/Turret2.0/Turret_Animator.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/TurretGun2.0.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Animations/TurretGun2.0.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/PNG/Retina/oilSpill_large.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/PNG/Retina/oilSpill_large.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/PNG/Retina/oilSpill_small.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/PNG/Retina/oilSpill_small.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Remnants.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Remnants.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TurretNPS2.0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TurretNPS2.0.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/2d-top-down-tank-game-assets/PNG/Hulls_Color_A/Hull_01.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/2d-top-down-tank-game-assets/PNG/Hulls_Color_A/Hull_01.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/2d-top-down-tank-game-assets/PNG/Tracks/Track_1_A.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/2d-top-down-tank-game-assets/PNG/Tracks/Track_1_A.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/2d-top-down-tank-game-assets/PNG/Tracks/Track_1_B.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/2d-top-down-tank-game-assets/PNG/Tracks/Track_1_B.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levle-1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levle-1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/TowerGan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Turret/TowerGan.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/TurretController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Turret/TurretController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +47,8 @@
     <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34994584" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -105,7 +123,12 @@
       <workItem from="1675436485154" duration="3177000" />
       <workItem from="1675500673509" duration="6515000" />
       <workItem from="1675523145066" duration="595000" />
-      <workItem from="1675583865654" duration="4577000" />
+      <workItem from="1675583865654" duration="5012000" />
+      <workItem from="1675688124513" duration="3485000" />
+      <workItem from="1675765091986" duration="3066000" />
+      <workItem from="1675784594301" duration="3778000" />
+      <workItem from="1675796359986" duration="610000" />
+      <workItem from="1675842410314" duration="1904000" />
     </task>
     <servers />
   </component>

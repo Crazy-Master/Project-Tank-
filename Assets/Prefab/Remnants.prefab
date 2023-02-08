@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 269159575623660166}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4911919295156624193}
@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -314280211
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4248d876f87992040bc61f9a60df791a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -106,21 +106,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8818558683809007147}
     m_Modifications:
-    - target: {fileID: 634007314853955045, guid: 34f5bc6a9cfd85447b9a1ae17dd8f51a, type: 3}
-      propertyPath: looping
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1124151848056432871, guid: 34f5bc6a9cfd85447b9a1ae17dd8f51a, type: 3}
       propertyPath: m_Name
       value: Boom
-      objectReference: {fileID: 0}
-    - target: {fileID: 2627416195882316053, guid: 34f5bc6a9cfd85447b9a1ae17dd8f51a, type: 3}
-      propertyPath: looping
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2922807730465755703, guid: 34f5bc6a9cfd85447b9a1ae17dd8f51a, type: 3}
-      propertyPath: looping
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8224909505057541614, guid: 34f5bc6a9cfd85447b9a1ae17dd8f51a, type: 3}
       propertyPath: m_RootOrder
@@ -136,7 +124,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8224909505057541614, guid: 34f5bc6a9cfd85447b9a1ae17dd8f51a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 8224909505057541614, guid: 34f5bc6a9cfd85447b9a1ae17dd8f51a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -164,10 +152,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8224909505057541614, guid: 34f5bc6a9cfd85447b9a1ae17dd8f51a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9054200944406562528, guid: 34f5bc6a9cfd85447b9a1ae17dd8f51a, type: 3}
-      propertyPath: looping
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
