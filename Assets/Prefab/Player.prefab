@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9171402578289159863}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: firePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23,14 +23,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9171402578289159862}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.008, y: 0.696, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0.406, y: -0.018, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9171402578509095029}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!1 &9171402578509095028
 GameObject:
   m_ObjectHideFlags: 0
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9171402578509095029}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: TankTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9171402578706816418}
   - component: {fileID: 9171402578706816429}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9171402578706816428}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.213, y: -1.337, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -166,7 +166,7 @@ GameObject:
   - component: {fileID: 9171402578926983844}
   - component: {fileID: 9171402578926983846}
   - component: {fileID: 9171402578926983847}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SmokeEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4987,7 +4987,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9171402579030597610}
   - component: {fileID: 9171402579030597611}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: TankBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5047,8 +5047,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -7364905
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2af93a775848fab4ca1e8c036b2cdff1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5071,7 +5071,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9171402579270218250}
   - component: {fileID: 9171402579270218251}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: TankTurretParent
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -5086,7 +5086,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9171402579270218293}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0.02, z: 0}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1.7664727, y: 1.4037186, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5132,9 +5132,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -7364905
+  m_SortingLayer: 5
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 8c247d1e87247e14ca9581614c76e869, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5158,7 +5158,7 @@ GameObject:
   - component: {fileID: 9171402579513754729}
   - component: {fileID: 9171402579513754734}
   - component: {fileID: 9171402579513754731}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Tank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5240,6 +5240,5 @@ MonoBehaviour:
   speedBullet: 20
   turretParent: {fileID: 9171402579270218250}
   firePoint: {fileID: 9171402578289159863}
-  projectilePrefab: {fileID: 9208922802422255748, guid: d22498ac80a255540b6b841e92745401,
-    type: 3}
+  projectilePrefab: {fileID: 9208922802422255748, guid: d22498ac80a255540b6b841e92745401, type: 3}
   smokeEffect: {fileID: 9171402578926983846}
