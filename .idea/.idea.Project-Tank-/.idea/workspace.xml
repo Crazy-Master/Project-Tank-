@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d7b8136-ae43-4042-ad4c-dbf3b914d853" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TankNPS_1.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TankNPS_1/TankNPS_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TankNPS_1/TankNPS_1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TankNPS_1/Track_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TankNPS_1/Track_1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TurretNPS.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TurretNPS.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TurretNPS2.0.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TurretNPS2.0.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TankNPSController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TankNPSController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Player.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +13,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TankNPCController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Info/BulletInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Ruby/Ruby Tutorial/Assets/Scripts/RubyController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HpObject.cs" root0="FORCE_HIGHLIGHTING" />
@@ -124,7 +113,7 @@
       <workItem from="1675796359986" duration="610000" />
       <workItem from="1675842410314" duration="5836000" />
       <workItem from="1675865826955" duration="3029000" />
-      <workItem from="1675885460031" duration="938000" />
+      <workItem from="1675885460031" duration="596000" />
     </task>
     <servers />
   </component>
