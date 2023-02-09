@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TankNPSController : MonoBehaviour
+public class TankNPCController : MonoBehaviour
 {
     public Rigidbody2D rd2d;
     private Vector2 movementVector;

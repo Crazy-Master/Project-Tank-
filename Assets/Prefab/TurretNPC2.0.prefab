@@ -463,7 +463,7 @@ GameObject:
   - component: {fileID: 2275395664037058944}
   - component: {fileID: 3356236658179884677}
   m_Layer: 0
-  m_Name: TurretNPS2.0
+  m_Name: TurretNPC2.0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -343,7 +343,7 @@ GameObject:
   m_Component:
   - component: {fileID: 548616069409356463}
   m_Layer: 0
-  m_Name: TurretNPS
+  m_Name: TurretNPC
   m_TagString: Damaged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
