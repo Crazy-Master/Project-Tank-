@@ -16828,6 +16828,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 9171402578926983841, guid: 041695d5d87860d409db3f6effe7ee80, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 041695d5d87860d409db3f6effe7ee80, type: 3}
 --- !u!1001 &1378692175
@@ -16899,11 +16903,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4500971158260909126, guid: 48b422dea9cccc54fb80a297c284c77c, type: 3}
   m_PrefabInstance: {fileID: 1378692175}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1483218811 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7740947417314159619, guid: 041695d5d87860d409db3f6effe7ee80, type: 3}
-  m_PrefabInstance: {fileID: 1298949359}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1526465346
 PrefabInstance:
@@ -17634,7 +17633,7 @@ PrefabInstance:
     - target: {fileID: 4108208539091078361, guid: 0a43ba05594814648ad1a73d78694d74, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1483218811}
+      objectReference: {fileID: 0}
     - target: {fileID: 5454894285915632782, guid: 0a43ba05594814648ad1a73d78694d74, type: 3}
       propertyPath: m_Name
       value: TankNPS_1

@@ -74,14 +74,18 @@ public class TankConlrollerIlya : HpObject
         //  UI.instance.SetValue(_currentHpObject/_maxHp);
         smokeStep = _maxHp / _currentHpObject*3;
         SmokeEffect(smokeStep);
+        UI.instance.SetValue(_currentHpObject / (float)_maxHp);
     }
     public override void SetHeal(float heal)
     {
         base.SetHeal (heal);
-       //  UI.instance.SetValue(_currentHpObject / _maxHp);
-       // smokeStep = _maxHp / _currentHpObject * 3;
-       // var emission = smokeEffect.emission;
-       // emission.rateOverTime = smokeStep;
+        smokeStep = _maxHp / _currentHpObject * 3;
+        SmokeEffect(smokeStep);
+        UI.instance.SetValue(_currentHpObject / (float)_maxHp);
+        //  UI.instance.SetValue(_currentHpObject / _maxHp);
+        // smokeStep = _maxHp / _currentHpObject * 3;
+        // var emission = smokeEffect.emission;
+        // emission.rateOverTime = smokeStep;
     }
 
     private void SmokeEffect (float valueSmoke, bool gus=false)
