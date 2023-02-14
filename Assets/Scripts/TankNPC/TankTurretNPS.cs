@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class TankTurretNPS : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float turretRotationSpeed = 100;
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField] private Transform _turretParent;
+    
+    public void HandleTurretMovement(Vector2 pointerPosition)
     {
-        
+        var turretDirection = (Vector3)pointerPosition - _turretParent.position;
+    
+        var desiredAngle = Mathf.Atan2(turretDirection.y, turretDirection.x) * Mathf.Rad2Deg;
+    
+        var rotatrionStep = turretRotationSpeed * Time.deltaTime;
+        _turretParent.rotation = Quaternion.RotateTowards(_turretParent.rotation, Quaternion.Euler(0, 0, desiredAngle), rotatrionStep);
     }
 }

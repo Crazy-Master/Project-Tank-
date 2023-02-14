@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class TankControllerNPS : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private TankBaseNPS _tankBaseNps;
+    [SerializeField] private TankTurretNPS _tankturretNps;
+    private Camera mainCamera;
+    
+    private void Awake()
     {
-        
+        if (mainCamera == null)
+            mainCamera = Camera.main;
     }
-
-    // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
+        Vector2 movementVector = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        _tankBaseNps.MoveBase(movementVector);
         
+        Vector3 mousePosition = Input.mousePosition;
+        mousePosition.z = mainCamera.nearClipPlane;
+        Vector2 mouseWorldPosition = mainCamera.ScreenToWorldPoint(mousePosition);
+        _tankturretNps.HandleTurretMovement(mouseWorldPosition);
     }
+    
+       
+    
 }
