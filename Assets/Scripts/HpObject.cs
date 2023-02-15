@@ -5,10 +5,8 @@ public class HpObject : MonoBehaviour
     protected float _currentHpObject;
     [SerializeField]  protected float _maxHp = 100;
 
-    public float HpObjectManager
-    {
-        get { return _currentHpObject; }
-    }
+    public float HpObjectManager => _currentHpObject;
+    
 
     public void Start()
     {
