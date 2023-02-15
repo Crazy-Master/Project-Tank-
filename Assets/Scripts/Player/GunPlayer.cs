@@ -12,6 +12,5 @@ public class GunPlayer : MonoBehaviour
         // В ТАНККОНТРОЛЛЕР прокинуть  eBULLET 
         //var bullet = projectileOdject.GetComponent<Rigidbody2D>();
         //bullet.AddForce(firePoint.up * speedBullet, ForceMode2D.Impulse);
-        Debug.Log("Shooting");
     }
 }

@@ -68,6 +68,7 @@ public class TurretController : MonoBehaviour
         if (other.gameObject.GetComponent<HpObject>() == null || other.gameObject == towerTurret)
         {
             return;
+            Debug.Log("132");
         }
         
         _enemies.Add(other.gameObject.GetComponent<HpObject>());
@@ -85,7 +86,7 @@ public class TurretController : MonoBehaviour
 
     Transform ChoosingEnemy()
     {
-        float minHp = 999;
+        float minHp = 9999;
         HpObject tankCont = null;
         foreach (var variable in _enemies)
         {

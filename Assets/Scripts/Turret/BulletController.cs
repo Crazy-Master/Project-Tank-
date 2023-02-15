@@ -26,7 +26,7 @@ public class BulletController : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer < 0) Destroy(gameObject);
     }
-    
+
 
     private void OnTriggerEnter2D(Collider2D other)
     {

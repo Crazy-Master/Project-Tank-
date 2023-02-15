@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TankConlrollerIlya : HpObject
+public class TankConlrollerIlya : MonoBehaviour
 {
 
  //   public Rigidbody2D rd2d;
@@ -11,13 +11,13 @@ public class TankConlrollerIlya : HpObject
  //   public float rotationSpeed = 100; //скорость вращения танка
  //   public float turretRotationSpeed = 150; //скорость вращения турели
     [SerializeField] private float speedBullet;
-    private float smokeStep=1;   //количество дыма
+ //   private float smokeStep=1;   //количество дыма
 
     public Transform turretParent;
     //public transform firepoint;
 
     public GameObject projectilePrefab;
-    public ParticleSystem smokeEffect;
+    //public ParticleSystem smokeEffect;
 
     public TankMoverPlayer tankMover;
     public AimTurretPlayer aimTurretPlayer;
@@ -67,7 +67,7 @@ public class TankConlrollerIlya : HpObject
 
         if (Input.GetMouseButtonDown(0)) // нажимаем лкл - выстрел
         {
-            Debug.Log("shoot");
+            gunPlayers[0].shoot();
             // делаем выстрел
 
         }
@@ -119,37 +119,37 @@ public class TankConlrollerIlya : HpObject
   //      rd2d.MoveRotation(transform.rotation * Quaternion.Euler(0, 0, -movementVector.x * rotationSpeed * Time.fixedDeltaTime));
   //  }
 
-    public override void SetDamage(float damage)
-    {
-        base.SetDamage(damage);
-        //  UI.instance.SetValue(_currentHpObject/_maxHp);
-        smokeStep = _maxHp / _currentHpObject*3;
-        SmokeEffect(smokeStep);
-        UI.instance.SetValue(_currentHpObject / (float)_maxHp);
-    }
-    public override void SetHeal(float heal)
-    {
-        base.SetHeal (heal);
-        smokeStep = _maxHp / _currentHpObject * 3;
-        SmokeEffect(smokeStep);
-        UI.instance.SetValue(_currentHpObject / (float)_maxHp);
-        //  UI.instance.SetValue(_currentHpObject / _maxHp);
-        // smokeStep = _maxHp / _currentHpObject * 3;
-        // var emission = smokeEffect.emission;
-        // emission.rateOverTime = smokeStep;
-    }
+    //public override void SetDamage(float damage)
+    //{
+    //    base.SetDamage(damage);
+    //    //UI.instance.SetValue(_currentHpObject/_maxHp);
+    //    smokeStep = _maxHp / _currentHpObject*3;
+    //    SmokeEffect(smokeStep);
+    //    UI.instance.SetValue(_currentHpObject / (float)_maxHp);
+    //}
+    //public override void SetHeal(float heal)
+    //{
+    //    base.SetHeal (heal);
+    //    smokeStep = _maxHp / _currentHpObject * 3;
+    //    SmokeEffect(smokeStep);
+    //    UI.instance.SetValue(_currentHpObject / (float)_maxHp);
+    //    //  UI.instance.SetValue(_currentHpObject / _maxHp);
+    //    // smokeStep = _maxHp / _currentHpObject * 3;
+    //    // var emission = smokeEffect.emission;
+    //    // emission.rateOverTime = smokeStep;
+    //}
 
-    private void SmokeEffect (float valueSmoke, bool gus=false)
-    {
-        var emission = smokeEffect.emission;
-        if (!gus)
-        {
-            emission.rateOverTime = valueSmoke;
-        }
-        else
-        {
-            emission.rateOverTime = valueSmoke*2f;
-        }
-    }
+    //private void SmokeEffect (float valueSmoke, bool gus=false)
+    //{
+    //    var emission = smokeEffect.emission;
+    //    if (!gus)
+    //    {
+    //        emission.rateOverTime = valueSmoke;
+    //    }
+    //    else
+    //    {
+    //        emission.rateOverTime = valueSmoke*2f;
+    //    }
+    //}
 }
 
