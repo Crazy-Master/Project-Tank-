@@ -17,7 +17,9 @@ MonoBehaviour:
     speed: 2
     damage: 10
     timeLife: 8
+    sprite: {fileID: 0}
   - bulletName: 1
-    speed: 10
-    damage: 5
+    speed: 20
+    damage: 100
     timeLife: 10
+    sprite: {fileID: 0}

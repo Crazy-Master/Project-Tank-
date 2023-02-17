@@ -7,17 +7,19 @@ using UnityEngine;
 public class BulletController : MonoBehaviour
 {
     [SerializeField] private BulletDataBase bulletDB;
-    private EBullet _eBullet;
+    public EBullet _eBullet;
     private float timer;
 
     private void Awake()
     {
-        Rigidbody2D rb2d = GetComponent<Rigidbody2D>();
-        rb2d.AddForce(transform.up * bulletDB.GetSpeed(_eBullet), ForceMode2D.Impulse);
+       // Rigidbody2D rb2d = GetComponent<Rigidbody2D>();
+       // rb2d.AddForce(transform.up * bulletDB.GetSpeed(_eBullet), ForceMode2D.Impulse);
     }
 
     private void Start()
     {
+        Rigidbody2D rb2d = GetComponent<Rigidbody2D>();
+        rb2d.AddForce(transform.up * bulletDB.GetSpeed(_eBullet), ForceMode2D.Impulse);
         timer = bulletDB.GetTimeLife(_eBullet);
     }
 

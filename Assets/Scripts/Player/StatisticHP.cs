@@ -16,7 +16,7 @@ public class StatisticHP : HpObject
         UI.instance.SetValue(_currentHpObject/_maxHp);
         smokeStep = _maxHp / _currentHpObject * 3;
         SmokeEffect(smokeStep);
-      //  UI.instance.SetValue(_currentHpObject / (float)_maxHp);
+        UI.instance.SetValue(_currentHpObject / (float)_maxHp);
     }
     public override void SetHeal(float heal)
     {
