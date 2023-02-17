@@ -16,6 +16,7 @@ public class BulletSetting
     public float speed;
     public float damage;
     public float timeLife;
+    public Sprite sprite;
 }
 
 [CreateAssetMenu(fileName = "BulletDataBase", menuName = "Gameplay/New BulletDataBase")]

@@ -67,7 +67,7 @@ public class TankConlrollerIlya : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0)) // нажимаем лкл - выстрел
         {
-            gunPlayers[0].shoot();
+            gunPlayers[0].Shoot();
             // делаем выстрел
 
         }
@@ -79,7 +79,7 @@ public class TankConlrollerIlya : MonoBehaviour
     {
         foreach (var gunPlayer in gunPlayers)
         {
-            gunPlayer.shoot();
+            gunPlayer.Shoot();
         }
         //GameObject projectileOdject = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
         //var bullet = projectileOdject.GetComponent<Rigidbody2D>();
