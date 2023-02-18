@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TankBaseNPS : HpObject
@@ -14,6 +15,7 @@ public class TankBaseNPS : HpObject
     public Animator trackRigth;
 
     private Vector2 _movementVector;
+    
     private void Awake()
     {
         rd2d = GetComponent<Rigidbody2D>();
@@ -34,10 +36,29 @@ public class TankBaseNPS : HpObject
             rd2d.MoveRotation(transform.rotation * Quaternion.Euler(0, 0, -_movementVector.x * rotationSpeed * Time.fixedDeltaTime));
         }
         
-        
-        
-        //trackLeft.SetFloat("IsMoving" , 2f);
-        //trackRigth.SetFloat("IsMoving" , 2f);
     }
+
+    public void Update()
+    {
+        if (_movementVector != new Vector2(0,0 ))
+        {
+            IsMoving(true);
+        }
+        else
+        {
+            IsMoving(false);
+        }
+        
+    }
+    
+    
+    
+    private void IsMoving(bool isMoving)
+    {
+        Debug.Log("123");
+        trackLeft.SetBool("IsMoving", isMoving);
+        trackRigth.SetBool("IsMoving", isMoving);
+    }
+    
     
 }

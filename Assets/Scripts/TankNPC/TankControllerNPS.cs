@@ -5,25 +5,45 @@ using UnityEngine;
 public class TankControllerNPS : MonoBehaviour
 {
     [SerializeField] private TankBaseNPS _tankBaseNps;
-    [SerializeField] private TankTurretNPS _tankturretNps;
+    [SerializeField] private TankTurretNPS _tankTurretNps;
+    [SerializeField] private TankGunNPS[] _tankGunNps;
     private Camera mainCamera;
-    
+
     private void Awake()
     {
         if (mainCamera == null)
             mainCamera = Camera.main;
+
+        if (_tankBaseNps == null)
+            _tankBaseNps = GetComponentInChildren<TankBaseNPS>();
+
+        if (_tankTurretNps == null)
+            _tankTurretNps = GetComponentInChildren<TankTurretNPS>();
+
+        if (_tankGunNps == null || _tankGunNps.Length == 0)
+        {
+            _tankGunNps = GetComponentsInChildren<TankGunNPS>();
+        }
     }
+
     private void FixedUpdate()
     {
         Vector2 movementVector = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         _tankBaseNps.MoveBase(movementVector);
-        
+
         Vector3 mousePosition = Input.mousePosition;
         mousePosition.z = mainCamera.nearClipPlane;
         Vector2 mouseWorldPosition = mainCamera.ScreenToWorldPoint(mousePosition);
-        _tankturretNps.HandleTurretMovement(mouseWorldPosition);
+        _tankTurretNps.HandleTurretMovement(mouseWorldPosition);
+
+        if (Input.GetMouseButtonDown(0)) HandleShoot();
     }
-    
-       
-    
+
+    public void HandleShoot()
+    {
+        foreach (var tankGunNPS in _tankGunNps)
+        {
+            tankGunNPS.Shoot();
+        }
+    }
 }
