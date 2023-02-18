@@ -16,7 +16,7 @@ public class UI : MonoBehaviour
     }
     void Start()
     {
-        origimalSize = mask.rectTransform.rect.width;
+        //origimalSize = mask.rectTransform.rect.width;
     }
 
     public void SetValue(float value)

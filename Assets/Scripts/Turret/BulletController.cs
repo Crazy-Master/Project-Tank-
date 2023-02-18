@@ -6,9 +6,12 @@ using UnityEngine;
 
 public class BulletController : MonoBehaviour
 {
-    [SerializeField] private BulletDataBase bulletDB;
     public EBullet _eBullet;
+    public TankBaseNPS creatorObject = null;
+        
+    [SerializeField] private BulletDataBase bulletDB;
     private float timer;
+    
 
     private void Awake()
     {
@@ -33,10 +36,14 @@ public class BulletController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         HpObject hpObject = other.gameObject.GetComponent<HpObject>();
-        if (hpObject)
+        if (hpObject != creatorObject)
         {
-            hpObject.SetDamage(bulletDB.GetDamage(_eBullet));
+            if (hpObject)
+            {
+                hpObject.SetDamage(bulletDB.GetDamage(_eBullet));
+            }
+    
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
     }
 }
