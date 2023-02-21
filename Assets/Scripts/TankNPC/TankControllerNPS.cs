@@ -26,7 +26,7 @@ public class TankControllerNPS : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         Vector2 movementVector = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         _tankBaseNps.MoveBase(movementVector);
@@ -35,7 +35,7 @@ public class TankControllerNPS : MonoBehaviour
         mousePosition.z = mainCamera.nearClipPlane;
         Vector2 mouseWorldPosition = mainCamera.ScreenToWorldPoint(mousePosition);
         _tankTurretNps.HandleTurretMovement(mouseWorldPosition);
-
+        
         if (Input.GetMouseButtonDown(0)) HandleShoot();
     }
 

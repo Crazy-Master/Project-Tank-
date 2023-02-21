@@ -3,45 +3,48 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(ObjectPool))]
 public class TankGunNPS : MonoBehaviour
 {
-    public BulletController projectilePrefab;
+    public GameObject projectilePrefab;
     public Transform firePoint;
     public EBullet bullet;
     
     private TankBaseNPS _tankBaseNPS;
-    private float _rechargeTimer;
     private bool _isRecharge;
-    [SerializeField] private float _timerRecharge = 0.7f;
+    [SerializeField] private float _timerRecharge = 0.5f;
+
+    private ObjectPool _bulletPool;
+    [SerializeField] private int _bulletpoolCount = 2;
 
     private void Awake()
     {
         _tankBaseNPS = GetComponentInParent<TankBaseNPS>();
+        _bulletPool = GetComponent<ObjectPool>();
     }
 
-    private void FixedUpdate()
+    private void Start()
     {
-        if (_isRecharge) Recharge();
+        _bulletPool.Initialize(projectilePrefab, _bulletpoolCount);
     }
 
     public void Shoot()
     {
-        if (_isRecharge == false)
+        if (!_isRecharge)
         {
-            BulletController projectileOdject = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
-            projectileOdject._eBullet = bullet;
-            projectileOdject.creatorObject = _tankBaseNPS;
+            //BulletController projectileOdject = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
+            GameObject projectileOdject = _bulletPool.CreateObject(firePoint);
+            BulletController projectileBulletController = projectileOdject.gameObject.GetComponent<BulletController>();
+            projectileBulletController._eBullet = bullet;
+            projectileBulletController.creatorObject = _tankBaseNPS;
+            _isRecharge = true;
+            Invoke(nameof(Recharge), _timerRecharge);
         }
-        _isRecharge = true;
     }
 
+    
     private void Recharge()
     {
-        _rechargeTimer -= Time.deltaTime;
-        if (_rechargeTimer < 0)
-        {
-            _isRecharge = false;
-            _rechargeTimer = _timerRecharge;
-        }
+        _isRecharge = false;
     }
 }
