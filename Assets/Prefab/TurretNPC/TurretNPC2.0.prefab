@@ -332,6 +332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxHp: 20
+  tankObject: {fileID: 0}
   firePointRight: {fileID: 7545873046714521178}
   firePointLeft: {fileID: 9097763221949474867}
   sleevEffectL: {fileID: 6133899217653517342}
@@ -655,10 +656,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3880050235821555665}
     m_Modifications:
-    - target: {fileID: 577862228285814150, guid: 48bc71d4b2c5fcd479e1f8f33c95bf02, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 994394811749410051, guid: 48bc71d4b2c5fcd479e1f8f33c95bf02, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -706,10 +703,6 @@ PrefabInstance:
     - target: {fileID: 6883341213513543121, guid: 48bc71d4b2c5fcd479e1f8f33c95bf02, type: 3}
       propertyPath: m_Name
       value: MuzzleFlash
-      objectReference: {fileID: 0}
-    - target: {fileID: 6883341213513543121, guid: 48bc71d4b2c5fcd479e1f8f33c95bf02, type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48bc71d4b2c5fcd479e1f8f33c95bf02, type: 3}
@@ -730,10 +723,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5045797219085421659}
     m_Modifications:
-    - target: {fileID: 577862228285814150, guid: 48bc71d4b2c5fcd479e1f8f33c95bf02, type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 994394811749410051, guid: 48bc71d4b2c5fcd479e1f8f33c95bf02, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -781,10 +770,6 @@ PrefabInstance:
     - target: {fileID: 6883341213513543121, guid: 48bc71d4b2c5fcd479e1f8f33c95bf02, type: 3}
       propertyPath: m_Name
       value: MuzzleFlash
-      objectReference: {fileID: 0}
-    - target: {fileID: 6883341213513543121, guid: 48bc71d4b2c5fcd479e1f8f33c95bf02, type: 3}
-      propertyPath: m_Layer
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48bc71d4b2c5fcd479e1f8f33c95bf02, type: 3}

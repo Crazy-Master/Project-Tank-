@@ -6,59 +6,18 @@ using UnityEngine;
 
 public class TankBaseNPS : HpObject
 {
-    public Rigidbody2D rd2d;
+    [SerializeField] private GameObject _objectTank;
+    [SerializeField] private GameObject _remnants;
 
-    public float maxSpeed = 100;
-    public float rotationSpeed = 10;
-    
-    public Animator trackLeft;
-    public Animator trackRigth;
-
-    private Vector2 _movementVector;
-    
-    private void Awake()
+    public override void SetDamage(float damage)
     {
-        rd2d = GetComponent<Rigidbody2D>();
-    }
-
-    
-
-    public void MoveBase(Vector2 movementVector)
-    {
-        _movementVector = movementVector;
-        rd2d.velocity = (Vector2)transform.up * _movementVector.y * maxSpeed * Time.fixedDeltaTime;
-        if (_movementVector.y < 0)
+        _currentHpObject -= damage;
+        if (_currentHpObject <= 0)
         {
-            rd2d.MoveRotation(transform.rotation * Quaternion.Euler(0, 0, _movementVector.x * rotationSpeed * Time.fixedDeltaTime));
+            GameObject remnantsObject = Instantiate(_remnants, _objectTank.transform.position, _objectTank.transform.rotation);
+            remnantsObject.GetComponent<RemnantsExplosion>().DestroyTurret(_objectTank);
         }
-        else
-        {
-            rd2d.MoveRotation(transform.rotation * Quaternion.Euler(0, 0, -_movementVector.x * rotationSpeed * Time.fixedDeltaTime));
-        }
-        
+    
     }
-
-    public void Update()
-    {
-        if (_movementVector != new Vector2(0,0 ))
-        {
-            IsMoving(true);
-        }
-        else
-        {
-            IsMoving(false);
-        }
-        
-    }
-    
-    
-    
-    private void IsMoving(bool isMoving)
-    {
-        Debug.Log("123");
-        trackLeft.SetBool("IsMoving", isMoving);
-        trackRigth.SetBool("IsMoving", isMoving);
-    }
-    
     
 }

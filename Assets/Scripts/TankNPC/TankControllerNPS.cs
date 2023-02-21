@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TankControllerNPS : MonoBehaviour
 {
-    [SerializeField] private TankBaseNPS _tankBaseNps;
+    [SerializeField] private TankMoveNPS _tankMoveNps;
     [SerializeField] private TankTurretNPS _tankTurretNps;
     [SerializeField] private TankGunNPS[] _tankGunNps;
     private Camera mainCamera;
@@ -14,8 +14,8 @@ public class TankControllerNPS : MonoBehaviour
         if (mainCamera == null)
             mainCamera = Camera.main;
 
-        if (_tankBaseNps == null)
-            _tankBaseNps = GetComponentInChildren<TankBaseNPS>();
+        if (_tankMoveNps == null)
+            _tankMoveNps = GetComponentInChildren<TankMoveNPS>();
 
         if (_tankTurretNps == null)
             _tankTurretNps = GetComponentInChildren<TankTurretNPS>();
@@ -29,7 +29,7 @@ public class TankControllerNPS : MonoBehaviour
     private void Update()
     {
         Vector2 movementVector = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        _tankBaseNps.MoveBase(movementVector);
+        _tankMoveNps.MoveBase(movementVector);
 
         Vector3 mousePosition = Input.mousePosition;
         mousePosition.z = mainCamera.nearClipPlane;

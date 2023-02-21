@@ -16,6 +16,8 @@ public class TankGunNPS : MonoBehaviour
 
     private ObjectPool _bulletPool;
     [SerializeField] private int _bulletpoolCount = 2;
+    
+    [SerializeField] private ParticleSystem muzzleFlashEffect;
 
     private void Awake()
     {
@@ -37,6 +39,7 @@ public class TankGunNPS : MonoBehaviour
             BulletController projectileBulletController = projectileOdject.gameObject.GetComponent<BulletController>();
             projectileBulletController._eBullet = bullet;
             projectileBulletController.creatorObject = _tankBaseNPS;
+            muzzleFlashEffect.Play();
             _isRecharge = true;
             Invoke(nameof(Recharge), _timerRecharge);
         }

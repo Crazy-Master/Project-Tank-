@@ -7,12 +7,11 @@ using UnityEngine;
 
 public class ObjectPool : MonoBehaviour
 {
-    [SerializeField] protected GameObject _objectToPool;
-    [SerializeField] protected int _poolSize = 10;
+    protected GameObject _objectToPool;
+    protected int _poolSize = 10;
     
     protected Queue<GameObject> _objectPool;
-
-    public Transform spawnedObjectsParent;
+    private Transform spawnedObjectsParent;
 
     private void Awake()
     {
@@ -27,14 +26,14 @@ public class ObjectPool : MonoBehaviour
 
     public GameObject CreateObject(Transform firePoint)
     {
-        //CreateObjectParentIfNeeded();
-
+        CreateObjectParentIfNeeded();
+        
         GameObject spawnedObject = null;
         if (_objectPool.Count < _poolSize)
         {
             spawnedObject = Instantiate(_objectToPool, firePoint.position, firePoint.rotation);
             spawnedObject.name = transform.root.name + "_" + _objectToPool.name + "_" + _objectPool.Count;
-            //spawnedObject.transform.SetParent(spawnedObjectsParent);
+            spawnedObject.transform.SetParent(spawnedObjectsParent);
             spawnedObject.GetComponent<BulletController>().AddForceBullet();
         }
         else
