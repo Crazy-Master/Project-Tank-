@@ -120,8 +120,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rd2d: {fileID: 0}
-  maxSpeed: 100
-  rotationSpeed: 10
+  maxSpeed: 70
+  rotationSpeed: 50
   trackLeft: {fileID: 8236900487223049543}
   trackRigth: {fileID: 1985670643986096013}
 --- !u!50 &3432868325998716145

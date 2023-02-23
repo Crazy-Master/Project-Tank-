@@ -35,6 +35,7 @@ public class ObjectPool : MonoBehaviour
             spawnedObject.name = transform.root.name + "_" + _objectToPool.name + "_" + _objectPool.Count;
             spawnedObject.transform.SetParent(spawnedObjectsParent);
             spawnedObject.GetComponent<BulletController>().AddForceBullet();
+            spawnedObject.AddComponent<DestroyIfDisabled>();
         }
         else
         {
@@ -57,6 +58,20 @@ public class ObjectPool : MonoBehaviour
             var parentObject = GameObject.Find(name);
             if (parentObject != null) spawnedObjectsParent = parentObject.transform;
             else spawnedObjectsParent = new GameObject(name).transform;
+        }
+    }
+
+    private void OnDestroy()
+    {
+        foreach (var item in _objectPool)
+        {
+            if (item != null)
+            {
+                if (item.activeSelf == false)
+                    Destroy(item);
+                else
+                    item.GetComponent<DestroyIfDisabled>().SelfDestructionEnabled = true;
+            }
         }
     }
 }

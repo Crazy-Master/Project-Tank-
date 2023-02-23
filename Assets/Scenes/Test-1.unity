@@ -174,18 +174,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2846107592975962812, guid: 0a43ba05594814648ad1a73d78694d74, type: 3}
-      propertyPath: _timerRecharge
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2846107592975962812, guid: 0a43ba05594814648ad1a73d78694d74, type: 3}
-      propertyPath: _bulletpoolCount
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2846107592975962812, guid: 0a43ba05594814648ad1a73d78694d74, type: 3}
-      propertyPath: projectilePrefab
-      value: 
-      objectReference: {fileID: 2468806360887481156, guid: 97b5ec8fda9bc39428664af3ddb97abb, type: 3}
     - target: {fileID: 5454894285915632782, guid: 0a43ba05594814648ad1a73d78694d74, type: 3}
       propertyPath: m_Name
       value: TankNPC_1

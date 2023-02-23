@@ -18,6 +18,7 @@ public class BulletController : MonoBehaviour
     private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        timer = bulletDB.GetTimeLife(_eBullet);
     }
 
     private void Update()
