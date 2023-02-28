@@ -8,11 +8,7 @@ public class ChangeBullet : MonoBehaviour
     [SerializeField] private BulletDataBase bulletDB;
     public EBullet _eBullet;
     private GunPlayer gunPlayer;
-
-    public void Awake()
-    {
-        
-    }
+    
 
     public void OnTriggerEnter2D(Collider2D other)
     {

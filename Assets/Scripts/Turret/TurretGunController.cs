@@ -1,8 +1,8 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class TurretController : MonoBehaviour
+public class TurretGunController : MonoBehaviour
 {
     public Rigidbody2D rd2d;
     private Vector2 _movementVector;
@@ -32,7 +32,7 @@ public class TurretController : MonoBehaviour
 
     public void FixedUpdate()
     {
-        //if (_enemies.Count > 0)
+        if (_enemies.Count > 0)
         {
             if (_player != null)
             {
@@ -42,7 +42,7 @@ public class TurretController : MonoBehaviour
 
                 var rotatrionStep = turretRotationSpeed * Time.fixedDeltaTime;
                 turretParent.rotation = Quaternion.RotateTowards(turretParent.rotation,
-                Quaternion.Euler(0, 0, desiredAngle), rotatrionStep);
+                    Quaternion.Euler(0, 0, desiredAngle), rotatrionStep);
 
                 
                 if (towerGan.HpObjectManager > 0 && Quaternion.Angle(turretParent.rotation,Quaternion.Euler(0, 0, desiredAngle)) < 15)
@@ -60,51 +60,6 @@ public class TurretController : MonoBehaviour
             _isRecharge = false;
         
     }
-    
-    
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.GetComponent<HpObject>() == null || other.gameObject == towerTurret)
-        {
-            return;
-        }
-        
-        _enemies.Add(other.gameObject.GetComponent<HpObject>());
-        _player = ChoosingEnemy();
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        _enemies.Remove(other.gameObject.GetComponent<HpObject>());
-        if (_player == other.gameObject.transform || other.gameObject == towerTurret)
-        {
-            if (_enemies.Count > 0)
-            {
-                _player = ChoosingEnemy();
-            }
-            _player = null;
-        }
-    }
-
-    private Transform ChoosingEnemy()
-    {
-        float minHp = 9999;
-        HpObject tankCont = null;
-        foreach (var variable in _enemies)
-        {
-            var hp = variable.HpObjectManager;
-            if (minHp > hp)
-            {
-                tankCont = variable;
-                minHp = hp;
-            }
-        }
-
-        if (tankCont is not null) return tankCont.transform;
-        return null;
-    }
-
     private void TowerGun()
     {
         if (_isRecharge == false)
@@ -114,6 +69,4 @@ public class TurretController : MonoBehaviour
             rechargeTimer = timerRecharge;
         }
     }
-    
-    
 }

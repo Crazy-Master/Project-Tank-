@@ -558,6 +558,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -179.996
       objectReference: {fileID: 0}
+    - target: {fileID: 3989147285545868150, guid: 8a0252996e0a43243a9eb8398757bb0c, type: 3}
+      propertyPath: m_SortingLayer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3989147285545868150, guid: 8a0252996e0a43243a9eb8398757bb0c, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1736517841
+      objectReference: {fileID: 0}
     - target: {fileID: 6744134480197838842, guid: 8a0252996e0a43243a9eb8398757bb0c, type: 3}
       propertyPath: m_Name
       value: SleevEffctRigth
@@ -636,6 +644,14 @@ PrefabInstance:
     - target: {fileID: 7684280526961907181, guid: 6467eb030b6bfda41933d2a32a250551, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884083101660853671, guid: 6467eb030b6bfda41933d2a32a250551, type: 3}
+      propertyPath: m_SortingLayer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884083101660853671, guid: 6467eb030b6bfda41933d2a32a250551, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1736517841
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6467eb030b6bfda41933d2a32a250551, type: 3}
