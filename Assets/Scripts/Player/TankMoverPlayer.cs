@@ -9,7 +9,8 @@ public class TankMoverPlayer : MonoBehaviour
     private Vector2 movementVector;
     public float maxSpeed = 10; //скорость
     public float rotationSpeed = 100; //скорость вращения танка
-
+    public ParticleSystem smokeEffect;
+    private float smokeStep = 1;
 
     private void Awake()
     {
@@ -19,6 +20,14 @@ public class TankMoverPlayer : MonoBehaviour
     public void Move (Vector2 movementVector)
     {
         this.movementVector = movementVector;
+        if (movementVector.x != 0 || movementVector.y != 0)
+        {
+            SmokeEffect(smokeStep, true);
+        }
+        else
+        {
+            SmokeEffect(smokeStep);
+        }
 
     }
 
@@ -27,4 +36,18 @@ public class TankMoverPlayer : MonoBehaviour
         rd2d.velocity = (Vector2)transform.up * movementVector.y * maxSpeed * Time.fixedDeltaTime;
         rd2d.MoveRotation(transform.rotation * Quaternion.Euler(0, 0, -movementVector.x * rotationSpeed * Time.fixedDeltaTime));
     }
+
+    private void SmokeEffect(float valueSmoke, bool gus = false)
+    {
+        var emission = smokeEffect.emission;
+        if (!gus)
+        {
+            emission.rateOverTime = valueSmoke;
+        }
+        else
+        {
+            emission.rateOverTime = valueSmoke * 2f;
+        }
+    }
+
 }

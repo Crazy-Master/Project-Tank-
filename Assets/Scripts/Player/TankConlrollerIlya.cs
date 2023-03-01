@@ -52,18 +52,16 @@ public class TankConlrollerIlya : MonoBehaviour
     }
 
 
-    public void FixedUpdate()
+    public void Update()
     {
         Vector2 movementVector = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         tankMover.Move(movementVector);
-
 
         Vector3 mousePosition = Input.mousePosition;
         mousePosition.z = mainCamera.nearClipPlane;
         Vector2 mouseWorldPosition = mainCamera.ScreenToWorldPoint(mousePosition);
         // return mouseWorldPosition;
         aimTurretPlayer.Aim(mouseWorldPosition);
-
 
         if (Input.GetMouseButtonDown(0)) // нажимаем лкл - выстрел
         {

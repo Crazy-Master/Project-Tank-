@@ -9,15 +9,39 @@ public class GunPlayer : MonoBehaviour
 
     public SpriteRenderer GunSprite;
 
-    public EBullet bullet;
+    [SerializeField] private float reloadGun;
+    private float _reloadTime;
+    private bool readyShoot=true;
 
+    public EBullet bullet;
+    public void Start()
+    {
+        _reloadTime = reloadGun;
+    }
+
+    public void FixedUpdate()
+    {
+        if (!readyShoot)
+        {
+            _reloadTime -= Time.deltaTime;
+            if (_reloadTime < 0)
+            { readyShoot = true; }
+        }
+        Debug.Log(readyShoot);
+        Debug.Log(_reloadTime);
+    }
     public void Shoot()
     {
-        BulletController projectileOdject = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
-        projectileOdject._eBullet = bullet;
-        // ¬ “¿Õ  ŒÕ“–ŒÀÀ≈– ÔÓÍËÌÛÚ¸  eBULLET 
-        //var bullet = projectileOdject.GetComponent<Rigidbody2D>();
-        //bullet.AddForce(firePoint.up * speedBullet, ForceMode2D.Impulse);
+        if (readyShoot)
+        {
+            BulletController projectileOdject = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
+            projectileOdject._eBullet = bullet;            
+            readyShoot = false;
+            _reloadTime = reloadGun;
+            // ¬ “¿Õ  ŒÕ“–ŒÀÀ≈– ÔÓÍËÌÛÚ¸  eBULLET 
+            //var bullet = projectileOdject.GetComponent<Rigidbody2D>();
+            //bullet.AddForce(firePoint.up * speedBullet, ForceMode2D.Impulse);
+        }
     }
 
     public void ChangeGun (Sprite newSpriteGun)
