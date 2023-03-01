@@ -5,11 +5,7 @@ using UnityEngine;
 public class TurretEnemyManager : MonoBehaviour
 {
     private Vector2 _movementVector;
-    public Transform _enemy
-    {
-        get; 
-        private set;
-    }
+    public Transform _enemy { get; private set; }
     private List<HpObject> _enemies = new List<HpObject>();
 
     [SerializeField] private GameObject towerTurret;

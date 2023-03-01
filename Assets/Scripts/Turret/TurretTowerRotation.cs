@@ -21,6 +21,7 @@ public class TurretTowerRotation : MonoBehaviour
     {
        // if (_enemies.Count > 0)
         {
+           // _enemy = 
             if (_enemy != null)
             {
                 var turretDirection = _enemy.position - turretParent.position;
