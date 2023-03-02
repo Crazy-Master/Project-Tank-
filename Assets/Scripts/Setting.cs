@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class Setting : MonoBehaviour
 {
-    public TMPro.TMP_Dropdown resolutionDropdown;
-    public TMPro.TMP_Dropdown qualityDropdown;
+    public Dropdown resolutionDropdown;
+    public Dropdown qualityDropdown;
 
     Resolution[] resolutions;
 
