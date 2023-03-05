@@ -9,11 +9,7 @@ using UnityEngine;
         private float _desiredAngle;
         private bool _isRecharge;
         [SerializeField] private float _timerRecharge = 0.5f;
-
-        public void Start()
-        {
-            Debug.Log(AffectedArea()+ "" + _isRecharge);
-        }
+        
 
         public bool CanShootNow()
         {

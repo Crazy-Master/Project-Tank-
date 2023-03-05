@@ -76,7 +76,6 @@ GameObject:
   - component: {fileID: 3361745124161822222}
   - component: {fileID: 1409544008700505388}
   - component: {fileID: 5213234469129593608}
-  - component: {fileID: 4512052522314813288}
   - component: {fileID: 7789520091458043828}
   m_Layer: 10
   m_Name: Platform
@@ -190,19 +189,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 5
---- !u!114 &4512052522314813288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2484068240871456246}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9427eae82d178ab498b749cc0a648de0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _turretEnemyManager: {fileID: 0}
 --- !u!114 &7789520091458043828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,13 +213,13 @@ GameObject:
   - component: {fileID: 7547814080046279325}
   - component: {fileID: 1754465569723828648}
   - component: {fileID: 4284395183589125726}
-  - component: {fileID: 609741405882618606}
   - component: {fileID: 536914522535701085}
   - component: {fileID: 3480451047797798677}
   - component: {fileID: 3884840737368696896}
   - component: {fileID: 8692869522653500562}
   - component: {fileID: 8730692365226046389}
   - component: {fileID: 2217179781775862193}
+  - component: {fileID: 1036721306173821623}
   m_Layer: 8
   m_Name: Tower
   m_TagString: Untagged
@@ -332,29 +318,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &609741405882618606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3106231985338008146}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e727de5f3145d8e44ab003d66be126f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _maxHp: 20
-  tankObject: {fileID: 0}
-  firePointRight: {fileID: 7545873046714521178}
-  firePointLeft: {fileID: 9097763221949474867}
-  sleevEffectL: {fileID: 6133899217653517342}
-  sleevEffectR: {fileID: 1657674381977966922}
-  muzzleFlashEffectL: {fileID: 678668062696047788}
-  muzzleFlashEffectR: {fileID: 1206534683324622543}
-  platform: {fileID: 6992021103620616780}
-  bullet: {fileID: 2468806360887481156, guid: 97b5ec8fda9bc39428664af3ddb97abb, type: 3}
-  remnants: {fileID: 269159575623660166, guid: 9d72b65938669c047b2038dbfd3898f5, type: 3}
 --- !u!61 &536914522535701085
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -414,7 +377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbea89e9bc0945b687a3351e1a9125f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _timerRecharge: 0.5
+  _timerRecharge: 1
 --- !u!114 &8692869522653500562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -428,9 +391,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: 0
-  _projectilePrefab: {fileID: 2468806360887481156, guid: 97b5ec8fda9bc39428664af3ddb97abb, type: 3}
+  projectilePrefab: {fileID: 2468806360887481156, guid: 97b5ec8fda9bc39428664af3ddb97abb, type: 3}
   _firePoint: {fileID: 9097763221949474867}
-  _bulletpoolCount: 2
+  _bulletpoolCount: 4
   muzzleFlashEffect: {fileID: 678668062696047788}
   _canShoot: {fileID: 3884840737368696896}
 --- !u!114 &8730692365226046389
@@ -462,6 +425,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turretRotationSpeed: 50
+--- !u!114 &1036721306173821623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3106231985338008146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f8ec7cd2af58b4b8cafa70785bde21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3826800145245022841
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,11 +642,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2788531628172081980, guid: 8a0252996e0a43243a9eb8398757bb0c, type: 3}
   m_PrefabInstance: {fileID: 2823959696614299289}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &1657674381977966922 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 3472704605483749331, guid: 8a0252996e0a43243a9eb8398757bb0c, type: 3}
-  m_PrefabInstance: {fileID: 2823959696614299289}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2970313580241972508
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -744,11 +714,6 @@ PrefabInstance:
 --- !u!4 &4871944937447586033 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7684280526961907181, guid: 6467eb030b6bfda41933d2a32a250551, type: 3}
-  m_PrefabInstance: {fileID: 2970313580241972508}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &6133899217653517342 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 8946207834154967298, guid: 6467eb030b6bfda41933d2a32a250551, type: 3}
   m_PrefabInstance: {fileID: 2970313580241972508}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5367641890786157584
@@ -875,11 +840,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48bc71d4b2c5fcd479e1f8f33c95bf02, type: 3}
---- !u!198 &1206534683324622543 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 4834241317510193340, guid: 48bc71d4b2c5fcd479e1f8f33c95bf02, type: 3}
-  m_PrefabInstance: {fileID: 6028301452721948275}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6801588736722609008 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 994394811749410051, guid: 48bc71d4b2c5fcd479e1f8f33c95bf02, type: 3}
