@@ -30,13 +30,14 @@ public class Setting : MonoBehaviour
                 currentResolutionIndex = i;
            
         }
-        Debug.Log(resolutions.Length + " всего "+ " по списку " + options.Count );
+        Debug.Log(resolutions.Length + " РІСЃРµРіРѕ "+ " РїРѕ СЃРїРёСЃРєСѓ " + options.Count );
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.RefreshShownValue();
         LoadSettings(currentResolutionIndex);
+        
 
 
-      //  audioSrc = GetComponent<AudioSource>();
+        //  audioSrc = GetComponent<AudioSource>();
     }
 
     public void Update()
@@ -92,8 +93,14 @@ public class Setting : MonoBehaviour
             Screen.fullScreen = true;
 
         if (PlayerPrefs.HasKey("VolumePreference"))
+        {
             musicVolume = PlayerPrefs.GetFloat("VolumePreference");
-
+            audioSlide.value = musicVolume;
+        }
+        else
+        {
+            audioSlide.value = 1;
+        }
 
     }
 

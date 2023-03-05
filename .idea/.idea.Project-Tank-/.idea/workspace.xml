@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d7b8136-ae43-4042-ad4c-dbf3b914d853" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/2d-battle-tank-game-assets/PNG/Effects/towerDefense_tile295.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/2d-battle-tank-game-assets/PNG/Effects/towerDefense_tile295.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/2d-battle-tank-game-assets/PNG/Effects/towerDefense_tile296.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/2d-battle-tank-game-assets/PNG/Effects/towerDefense_tile296.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/2d-battle-tank-game-assets/PNG/Effects/towerDefense_tile297.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/2d-battle-tank-game-assets/PNG/Effects/towerDefense_tile297.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/2d-battle-tank-game-assets/PNG/Effects/towerDefense_tile298.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/2d-battle-tank-game-assets/PNG/Effects/towerDefense_tile298.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
