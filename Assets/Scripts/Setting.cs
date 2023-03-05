@@ -8,6 +8,10 @@ public class Setting : MonoBehaviour
 {
     public Dropdown resolutionDropdown;
     public Dropdown qualityDropdown;
+    public Slider audioSlide;
+
+    public AudioSource audioSrc;
+    private float musicVolume = 1f;
 
     Resolution[] resolutions;
 
@@ -18,17 +22,32 @@ public class Setting : MonoBehaviour
         resolutions = Screen.resolutions;
         int currentResolutionIndex = 0;
 
-        for (int i = 0; 0 < resolutions.Length; i++)
+        for (int i = 0; i < resolutions.Length; i++)
         {
             string option = resolutions[i].width + "x" + resolutions[i].height + " " + resolutions[i].refreshRate + "Hz";
             options.Add(option);
             if (resolutions[i].width == Screen.currentResolution.width && resolutions[i].height == Screen.currentResolution.height)
                 currentResolutionIndex = i;
-            resolutionDropdown.AddOptions(options);
-            resolutionDropdown.RefreshShownValue();
-            LoadSettings(currentResolutionIndex);
+           
         }
+        Debug.Log(resolutions.Length + " всего "+ " по списку " + options.Count );
+        resolutionDropdown.AddOptions(options);
+        resolutionDropdown.RefreshShownValue();
+        LoadSettings(currentResolutionIndex);
+
+
+      //  audioSrc = GetComponent<AudioSource>();
     }
+
+    public void Update()
+    {
+        musicVolume = audioSlide.value;
+        audioSrc.volume = musicVolume;
+
+    }
+
+
+
     public void SetFullScreen(bool isFullScreen)
     {
         Screen.fullScreen = isFullScreen;
@@ -36,8 +55,9 @@ public class Setting : MonoBehaviour
 
     public void SetResolution(int resolutionIndex)
     {
+        Debug.Log(resolutionIndex);
         Resolution resolution = resolutions[resolutionIndex];
-        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);        
     }
 
     public void SetQuality(int qualityIndex)
@@ -50,6 +70,8 @@ public class Setting : MonoBehaviour
         PlayerPrefs.SetInt("QualitySettingPreference", qualityDropdown.value);
         PlayerPrefs.SetInt("ResolutionPreference", resolutionDropdown.value);
         PlayerPrefs.SetInt("FullscreenPreference", System.Convert.ToInt32(Screen.fullScreen));
+        PlayerPrefs.SetFloat("VolumePreference", musicVolume);
+       
     }
 
     public void LoadSettings(int currentResolutionIndex)
@@ -68,5 +90,12 @@ public class Setting : MonoBehaviour
             Screen.fullScreen = System.Convert.ToBoolean(PlayerPrefs.GetInt("FullscreenPreference"));
         else
             Screen.fullScreen = true;
+
+        if (PlayerPrefs.HasKey("VolumePreference"))
+            musicVolume = PlayerPrefs.GetFloat("VolumePreference");
+
+
     }
+
+    
 }
