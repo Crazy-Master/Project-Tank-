@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: cca719c8bde2be5438b87584e13c47bb
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Phoenix Gaming
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: bcfd2b66cabc69048bdb7eb2f058bc3f, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

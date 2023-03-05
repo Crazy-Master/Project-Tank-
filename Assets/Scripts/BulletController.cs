@@ -7,7 +7,7 @@ using UnityEngine;
 public class BulletController : MonoBehaviour
 {
     public EBullet _eBullet;
-    public TankBaseNPS creatorObject = null;
+    public GameObject creatorObject;
     private Rigidbody2D rb2d;
     [SerializeField] private BulletDataBase bulletDB;
     private float timer;
