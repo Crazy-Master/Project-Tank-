@@ -37,6 +37,7 @@ public class TowerGan : HpObject
         }
         Debug.Log("123");
         GameObject bulletObject = Instantiate(bullet, firePoint.position, firePoint.rotation);
+        bulletObject.GetComponent<BulletController>().AddForceBullet();
         if (firePoint == firePointRight)
         {
             turret_Animator.SetTrigger("RightGun");
