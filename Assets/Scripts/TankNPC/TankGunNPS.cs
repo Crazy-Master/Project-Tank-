@@ -10,7 +10,7 @@ public class TankGunNPS : MonoBehaviour
     public Transform firePoint;
     public EBullet bullet;
     
-    private TankBaseNPS _tankBaseNPS;
+    private GameObject _tankBaseNPS;
     private bool _isRecharge;
     [SerializeField] private float _timerRecharge = 0.5f;
 
@@ -21,7 +21,6 @@ public class TankGunNPS : MonoBehaviour
 
     private void Awake()
     {
-        _tankBaseNPS = GetComponentInParent<TankBaseNPS>();
         _bulletPool = GetComponent<ObjectPool>();
     }
 

@@ -2,14 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TurretEnemyManager : MonoBehaviour
+public class TurretEnemyManager : MonoBehaviour, IEnemyManager
 {
     private Vector2 _movementVector;
-    public Transform _enemy { get; private set; }
+    private Transform _enemy;
     private List<HpObject> _enemies = new List<HpObject>();
 
     [SerializeField] private GameObject towerTurret;
-    
+
+    public Transform GetPositionEnemy()
+    {
+        return _enemy;
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -38,7 +42,7 @@ public class TurretEnemyManager : MonoBehaviour
         HpObject tankCont = null;
         foreach (var variable in _enemies)
         {
-            var hp = variable.HpObjectManager;
+            var hp = variable.CurrentHpObject();
             if (minHp > hp)
             {
                 tankCont = variable;

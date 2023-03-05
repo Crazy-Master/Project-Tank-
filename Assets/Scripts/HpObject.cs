@@ -1,17 +1,20 @@
 using UnityEngine;
 
-public class HpObject : MonoBehaviour
+public class HpObject : MonoBehaviour, IHpObject
 {
     protected float _currentHpObject;
     [SerializeField]  protected float _maxHp = 100;
     [SerializeField] protected GameObject tankObject;
 
-    public float HpObjectManager => _currentHpObject;
-    
 
     public void Start()
     {
         _currentHpObject = _maxHp;
+    }
+
+    public float CurrentHpObject()
+    {
+        return _currentHpObject;
     }
 
     public virtual void SetDamage(float damage)

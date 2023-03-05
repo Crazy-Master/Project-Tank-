@@ -2,71 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TurretGunController : MonoBehaviour
+public class TurretGunController : MonoBehaviour, IShoot
 {
-    public Rigidbody2D rd2d;
-    private Vector2 _movementVector;
-    public float turretRotationSpeed;
-    public Transform turretParent;
-    private Transform _player;
-
-    public float rechargeTimer;
-    public float timerRecharge = 0.7f;
+    public EBullet bullet;
+    [SerializeField] private GameObject projectilePrefab;
+    [SerializeField] private Transform _firePoint;
     
-    private List<HpObject> _enemies = new List<HpObject>();
+    private GameObject _Base;
 
-    public TowerGan towerGan;
-    public GameObject towerTurret;
+    private ObjectPool _bulletPool;
+    [SerializeField] private int _bulletpoolCount = 4;
+    [SerializeField] private ParticleSystem muzzleFlashEffect;
+    [SerializeField] private CanShoot _canShoot;
 
-   
-    
-
-    private bool _isRecharge;
-    //public float bulletDistance; 
-
+    //public float bulletDistance;
     private void Awake()
     {
-        rd2d = GetComponent<Rigidbody2D>();
+        _bulletPool = GetComponent<ObjectPool>();
     }
-    
-
-    public void FixedUpdate()
+    private void Start()
     {
-        if (_enemies.Count > 0)
-        {
-            if (_player != null)
-            {
-                var turretDirection = _player.position - turretParent.position;
-                
-                var desiredAngle = Mathf.Atan2(turretDirection.y, turretDirection.x) * Mathf.Rad2Deg;
-
-                var rotatrionStep = turretRotationSpeed * Time.fixedDeltaTime;
-                turretParent.rotation = Quaternion.RotateTowards(turretParent.rotation,
-                    Quaternion.Euler(0, 0, desiredAngle), rotatrionStep);
-
-                
-                if (towerGan.HpObjectManager > 0 && Quaternion.Angle(turretParent.rotation,Quaternion.Euler(0, 0, desiredAngle)) < 15)
-                {
-                    TowerGun();
-                }
-                
-            }
-        }
-
-        if (!_isRecharge) return;
-        rechargeTimer -= Time.deltaTime;
-        if (rechargeTimer < 0)
-                
-            _isRecharge = false;
-        
+        _bulletPool.Initialize(projectilePrefab, _bulletpoolCount);
     }
-    private void TowerGun()
+     
+
+    public void Shoot()
     {
-        if (_isRecharge == false)
+        if (_canShoot.CanShootNow())
         {
-            towerGan.Shot();
-            _isRecharge = true;
-            rechargeTimer = timerRecharge;
+            Debug.Log("shoot");
+            GameObject projectileOdject = _bulletPool.CreateObject(_firePoint);
+            BulletController projectileBulletController = projectileOdject.gameObject.GetComponent<BulletController>();
+            projectileBulletController._eBullet = bullet;
+            projectileBulletController.creatorObject = _Base;
+            muzzleFlashEffect.Play(); 
         }
     }
 }
