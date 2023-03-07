@@ -6,7 +6,7 @@ public class TurretRotation : MonoBehaviour, ITurretRotation
 {
     [SerializeField] private float turretRotationSpeed = 50;
     
-    public Transform turretParent { get; private set; }
+    public Transform turretParent { get; private set; } //как реализовать интерфейс?
     public float desiredAngle { get; private set; }
     private Vector3 _turretDirection;
     private float _rotatrionStep;
@@ -16,7 +16,6 @@ public class TurretRotation : MonoBehaviour, ITurretRotation
         turretParent = this.transform;
     }
     
-
     public void RotationTurret(Vector2 pointerPosition)
     {
         _turretDirection = (Vector3) pointerPosition - turretParent.position;

@@ -2,24 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TankMoveNPS : MonoBehaviour
+public class TankMoveController : MonoBehaviour, ITankMoveController
 {
     public Rigidbody2D rd2d;
 
-    public float maxSpeed = 100;
-    public float rotationSpeed = 10;
-    
-    public Animator trackLeft;
-    public Animator trackRigth;
+    [SerializeField] private float maxSpeed = 100;
+    [SerializeField] private float rotationSpeed = 10;
 
     private Vector2 _movementVector;
+    
+    [SerializeField] private Animator trackLeft;
+    [SerializeField] private Animator trackRigth;
     
     private void Awake()
     {
         rd2d = GetComponent<Rigidbody2D>();
     }
     
-    public void MoveBase(Vector2 movementVector)
+    public void Move(Vector2 movementVector)
     {
         _movementVector = movementVector;
         rd2d.velocity = (Vector2)transform.up * _movementVector.y * maxSpeed * Time.fixedDeltaTime;
@@ -37,13 +37,9 @@ public class TankMoveNPS : MonoBehaviour
     public void Update()
     {
         if (_movementVector != new Vector2(0, 0))
-        {
-            IsMoving(true);
-        }
+        { IsMoving(true); }
         else
-        {
-            IsMoving(false);
-        }
+        { IsMoving(false); }
     }
     
     private void IsMoving(bool isMoving)
@@ -51,6 +47,4 @@ public class TankMoveNPS : MonoBehaviour
         trackLeft.SetBool("IsMoving", isMoving);
         trackRigth.SetBool("IsMoving", isMoving);
     }
-
-
 }

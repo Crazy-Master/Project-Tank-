@@ -4,7 +4,7 @@ public class HpObject : MonoBehaviour, IHpObject
 {
     protected float _currentHpObject;
     [SerializeField]  protected float _maxHp = 100;
-    [SerializeField] protected GameObject tankObject;
+    [SerializeField] protected GameObject _gameObject;
 
 
     public void Start()
@@ -22,7 +22,7 @@ public class HpObject : MonoBehaviour, IHpObject
         _currentHpObject -= damage;
         if (_currentHpObject <= 0)
         {
-            Destroy(tankObject);
+            Destroy(_gameObject);
         }
     }
     public virtual void SetHeal(float heal)

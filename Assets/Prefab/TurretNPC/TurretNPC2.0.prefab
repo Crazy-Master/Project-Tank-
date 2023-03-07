@@ -220,6 +220,7 @@ GameObject:
   - component: {fileID: 8730692365226046389}
   - component: {fileID: 2217179781775862193}
   - component: {fileID: 1036721306173821623}
+  - component: {fileID: 4309458411910390527}
   m_Layer: 8
   m_Name: Tower
   m_TagString: Untagged
@@ -390,12 +391,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb05f506b5e6b76488cab796141191b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: 0
   projectilePrefab: {fileID: 2468806360887481156, guid: 97b5ec8fda9bc39428664af3ddb97abb, type: 3}
   _firePoint: {fileID: 9097763221949474867}
   _bulletpoolCount: 4
-  muzzleFlashEffect: {fileID: 678668062696047788}
   _canShoot: {fileID: 3884840737368696896}
+  muzzleFlashEffect: {fileID: 678668062696047788}
+  turret_Animator: {fileID: 0}
+  sleevEffect: {fileID: 0}
 --- !u!114 &8730692365226046389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,6 +439,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f8ec7cd2af58b4b8cafa70785bde21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4309458411910390527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3106231985338008146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 174e19be0126ab048a75486aab6ddeaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _guns:
+  - {fileID: 8692869522653500562}
 --- !u!1 &3826800145245022841
 GameObject:
   m_ObjectHideFlags: 0

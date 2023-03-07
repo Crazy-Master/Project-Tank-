@@ -6,15 +6,15 @@ public class TurretController : MonoBehaviour
 {
     //private Vector2 _movementVector;
     private Transform _enemy;
-    [SerializeField] private TurretEnemyManager _turretEnemyManager;
+    [SerializeField] private EnemyManager _turretEnemyManager;
 
     public void FixedUpdate()
     {
         _enemy = _turretEnemyManager.GetPositionEnemy();
         if (_enemy != null)
             {
-                gameObject.GetComponentInChildren<TurretRotation>().RotationTurret(_enemy.position);
-                gameObject.GetComponentInChildren<TurretGunController>().Shoot();
+                gameObject.GetComponentInChildren<ITurretRotation>().RotationTurret(_enemy.position);
+                gameObject.GetComponentInChildren<IGunsController>().GunsShoot();
             }
         
     }

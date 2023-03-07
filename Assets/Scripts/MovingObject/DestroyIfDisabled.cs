@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class DestroyIfDisabled : MonoBehaviour
 {
-   public bool SelfDestructionEnabled { get; set; } = false; //зачем { get; set; }
+   public bool SelfDestructionEnabled { get; set; } = false;
 
    private void OnDisable()
    {

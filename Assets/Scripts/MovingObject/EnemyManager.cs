@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TurretEnemyManager : MonoBehaviour, IEnemyManager
+public class EnemyManager : MonoBehaviour, IEnemyManager
 {
     private Vector2 _movementVector;
     private Transform _enemy;

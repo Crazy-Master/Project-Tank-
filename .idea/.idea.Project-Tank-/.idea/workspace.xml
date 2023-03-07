@@ -2,7 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d7b8136-ae43-4042-ad4c-dbf3b914d853" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Tank-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Tank-/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TankNPC_1/TankNPC_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TankNPC_1/TankNPC_1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TurretNPC/TurretNPC2.0.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TurretNPC/TurretNPC2.0.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HpObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HpObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TankNPC/DestroyIfDisabled.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TankNPC/DestroyIfDisabled.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TankNPC/TankBaseNPS.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TankNPC/TankBaseNPS.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TankNPC/TankControllerNPS.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TankNPC/TankControllerNPS.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/CanShoot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Turret/CanShoot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/ICanShoot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/ICanShoot.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/IEnemyManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/IEnemyManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/IHpObject.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/IHpObject.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/IShoot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/IShoot.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/ITurretRotation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/ITurretRotation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/TurretController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Turret/TurretController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/TurretEnemyManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/TurretEnemyManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/TurretGunController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/TurretGunController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/TurretHpManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/TurretHpManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Turret/TurretRotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Turret/TurretRotation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,6 +167,9 @@
       <workItem from="1677689268560" duration="3078000" />
       <workItem from="1678005483593" duration="14603000" />
       <workItem from="1678028118648" duration="2785000" />
+      <workItem from="1678122289689" duration="6259000" />
+      <workItem from="1678128994343" duration="1034000" />
+      <workItem from="1678210944173" duration="2720000" />
     </task>
     <servers />
   </component>
