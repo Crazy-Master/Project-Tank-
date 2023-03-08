@@ -32,7 +32,6 @@ public class GunController : MonoBehaviour, IShoot
         
         if (_canShoot.CanShootNow())
         {
-            Debug.Log(_bulletPool);
             GameObject projectileOdject = _bulletPool.CreateObject(_firePoint);
             BulletController projectileBulletController = projectileOdject.gameObject.GetComponent<BulletController>();
             projectileBulletController._eBullet = bullet;
