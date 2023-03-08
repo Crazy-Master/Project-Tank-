@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class TankControllerNPS : MonoBehaviour
+public class TankControllerPlayer : MonoBehaviour
 {
     [SerializeField] private ITankMoveController _tankMoveNps;
     [SerializeField] private ITurretRotation _tankTurretNps;

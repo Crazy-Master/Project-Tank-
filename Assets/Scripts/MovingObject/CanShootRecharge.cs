@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 //можно унаследовать для нпс!!!
-    public class CanShoot : MonoBehaviour, ICanShoot
+    public class CanShootRecharge : MonoBehaviour, ICanShoot
     {
         protected bool _isRecharge;
         [SerializeField] private float _timerRecharge = 0.5f;
@@ -12,7 +12,7 @@ using UnityEngine;
 
         public virtual bool CanShootNow()
         {
-            if (!_isRecharge)  // перечисление методов
+            if (!_isRecharge)
             {
                 IsRecharge();
                 return true;

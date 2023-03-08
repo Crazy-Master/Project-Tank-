@@ -11,7 +11,8 @@ public class GunController : MonoBehaviour, IShoot
     private GameObject _Base;
 
     private ObjectPool _bulletPool;
-    [SerializeField] private ICanShoot _canShoot;
+    private ICanShoot[] _canShoot;
+    private bool _canShootNow;
     
     [SerializeField] private ParticleSystem muzzleFlashEffect; // возможно, стоит выделить анимацию в отдельный класс
     //[SerializeField] private Animator turret_Animator;         // возможно, стоит выделить анимацию в отдельный класс
@@ -20,7 +21,7 @@ public class GunController : MonoBehaviour, IShoot
     //public float bulletDistance; 
     private void Awake()
     {
-        _canShoot = GetComponent<ICanShoot>();
+        _canShoot = GetComponents<ICanShoot>();
     }
     
     public void Shoot()
@@ -30,7 +31,7 @@ public class GunController : MonoBehaviour, IShoot
             _bulletPool = ObjectPool.instance;
         }
         
-        if (_canShoot.CanShootNow())
+        if (CanShoot())
         {
             GameObject projectileOdject = _bulletPool.CreateObject(_firePoint);
             BulletController projectileBulletController = projectileOdject.gameObject.GetComponent<BulletController>();
@@ -43,5 +44,19 @@ public class GunController : MonoBehaviour, IShoot
     private void AnimatorGun()
     {
         muzzleFlashEffect.Play();
+    }
+    
+    public bool CanShoot()
+    {
+        _canShootNow = true;
+        foreach (var canShoot in _canShoot)
+        {
+            var can = canShoot.CanShootNow();
+            if (can == false || _canShootNow == false)
+            {
+                _canShootNow = false;
+            }
+        }
+        return _canShootNow;
     }
 }

@@ -170,8 +170,7 @@ GameObject:
   - component: {fileID: 8775280141163586349}
   - component: {fileID: 4831687467144073872}
   - component: {fileID: 1329760432230025244}
-  - component: {fileID: 7070493019620952529}
-  - component: {fileID: 4686892341659880397}
+  - component: {fileID: 7386604990894164263}
   m_Layer: 7
   m_Name: TankGun
   m_TagString: Untagged
@@ -260,21 +259,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb05f506b5e6b76488cab796141191b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 2468806360887481156, guid: 97b5ec8fda9bc39428664af3ddb97abb, type: 3}
   _firePoint: {fileID: 4324173354847103750}
+  _bulletpoolCount: 4
   muzzleFlashEffect: {fileID: 5551868911481771811}
---- !u!114 &7070493019620952529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3880421827678829857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04acae459f5acd142b048cadfa952106, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &4686892341659880397
+  turret_Animator: {fileID: 0}
+  sleevEffect: {fileID: 0}
+--- !u!114 &7386604990894164263
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -327,11 +318,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1893936583652518113}
-  - component: {fileID: 5525719550832321531}
-  - component: {fileID: 6675466664988698740}
-  - component: {fileID: 6859311551460027}
+  - component: {fileID: 5702776617022034362}
   m_Layer: 7
-  m_Name: TankNPC_1
+  m_Name: TankPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -353,23 +342,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &5525719550832321531
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5454894285915632782}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 5
---- !u!114 &6675466664988698740
+--- !u!114 &5702776617022034362
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -378,23 +351,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 5454894285915632782}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dde9b95c263a9e43975da2188dcba85, type: 3}
+  m_Script: {fileID: 11500000, guid: bcf158bb918482248bc136fc30e8ce8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _turretEnemyManager: {fileID: 6859311551460027}
---- !u!114 &6859311551460027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5454894285915632782}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54d8f81f4e1c0ff40b23a474701617d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  towerTurret: {fileID: 467744408291335554}
 --- !u!1 &7656089398037444931
 GameObject:
   m_ObjectHideFlags: 0
