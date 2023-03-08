@@ -22,17 +22,17 @@ public class GunController : MonoBehaviour, IShoot
     {
         _canShoot = GetComponent<ICanShoot>();
     }
-    private void Start()
-    {
-        _bulletPool = ObjectPool.instance;
-        //_bulletPool.Initialize(projectilePrefab);
-    }
-     
-
+    
     public void Shoot()
     {
+        if (_bulletPool == null)
+        {
+            _bulletPool = ObjectPool.instance;
+        }
+        
         if (_canShoot.CanShootNow())
         {
+            Debug.Log(_bulletPool);
             GameObject projectileOdject = _bulletPool.CreateObject(_firePoint);
             BulletController projectileBulletController = projectileOdject.gameObject.GetComponent<BulletController>();
             projectileBulletController._eBullet = bullet;

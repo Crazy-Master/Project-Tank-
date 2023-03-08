@@ -3,20 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2d7b8136-ae43-4042-ad4c-dbf3b914d853" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Tank-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Tank-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TankNPC_1/TankNPC_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TankNPC_1/TankNPC_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test-1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test-1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BulletController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BulletController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HpObject.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HpObject.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovingObject/DestroyIfDisabled.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovingObject/DestroyIfDisabled.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovingObject/GunController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MovingObject/GunController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovingObject/ObjectPool.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovingObject/ObjectPool.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RemnantsExplosion.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RemnantsExplosion.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +140,7 @@
       <workItem from="1678122289689" duration="6259000" />
       <workItem from="1678128994343" duration="1034000" />
       <workItem from="1678210944173" duration="3364000" />
-      <workItem from="1678261258646" duration="5918000" />
+      <workItem from="1678261258646" duration="8788000" />
     </task>
     <servers />
   </component>
