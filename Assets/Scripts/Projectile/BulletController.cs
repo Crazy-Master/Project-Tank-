@@ -19,6 +19,7 @@ public class BulletController : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         timer = bulletDB.GetTimeLife(_eBullet);
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Update()
