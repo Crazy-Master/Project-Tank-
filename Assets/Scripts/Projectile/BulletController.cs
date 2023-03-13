@@ -8,24 +8,25 @@ public class BulletController : MonoBehaviour
 {
     public EBullet _eBullet;
     public GameObject creatorObject;
-    private Rigidbody2D rb2d;
+    private Rigidbody2D _rb2d;
     [SerializeField] private BulletDataBase bulletDB;
-    private float timer;
+    private float _timer;
+    private GameObject[] _h;
     
 
     
 
     private void Awake()
     {
-        rb2d = GetComponent<Rigidbody2D>();
-        timer = bulletDB.GetTimeLife(_eBullet);
+        _rb2d = GetComponent<Rigidbody2D>();
+        _timer = bulletDB.GetTimeLife(_eBullet);
         DontDestroyOnLoad(gameObject);
     }
 
     private void Update()
     {
-        timer -= Time.deltaTime;
-        if (timer < 0)
+        _timer -= Time.deltaTime;
+        if (_timer < 0)
         {
             gameObject.SetActive(false);
         }
@@ -35,20 +36,21 @@ public class BulletController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         HpObject hpObject = other.gameObject.GetComponent<HpObject>();
-        if (hpObject != creatorObject)
+        if (other.gameObject == creatorObject)
         {
-            if (hpObject)
-            {
-                hpObject.SetDamage(bulletDB.GetDamage(_eBullet));
-            }
-            gameObject.SetActive(false);
+            return;
         }
+        if (hpObject)
+        {
+            hpObject.SetDamage(bulletDB.GetDamage(_eBullet));
+        }
+        gameObject.SetActive(false);
     }
 
     public void AddForceBullet()
     {
-        rb2d.velocity = new Vector3(0, 0, 0);
-        rb2d.AddForce(transform.up * bulletDB.GetSpeed(_eBullet), ForceMode2D.Impulse);
-        timer = bulletDB.GetTimeLife(_eBullet);
+        _rb2d.velocity = new Vector3(0, 0, 0);
+        _rb2d.AddForce(transform.up * bulletDB.GetSpeed(_eBullet), ForceMode2D.Impulse);
+        _timer = bulletDB.GetTimeLife(_eBullet);
     }
 }

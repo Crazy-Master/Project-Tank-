@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,9 +6,14 @@ using UnityEngine;
 public class TankControllerNPC : MonoBehaviour
 {
     private Transform _enemy;
-    [SerializeField] private EnemyManager _turretEnemyManager;
+    private IEnemyManager _turretEnemyManager;
 
-    public void FixedUpdate()
+    private void Awake()
+    {
+        _turretEnemyManager = gameObject.GetComponentInChildren<IEnemyManager>();
+    }
+
+    private void FixedUpdate()
     {
         _enemy = _turretEnemyManager.GetPositionEnemy();
         if (_enemy != null)

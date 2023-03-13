@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7380208852890053570}
   - component: {fileID: 7640056096459578378}
   - component: {fileID: 5296407283677027038}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: wooden-box
   m_TagString: Untagged
   m_Icon: {fileID: 0}

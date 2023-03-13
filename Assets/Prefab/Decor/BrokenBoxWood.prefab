@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8439505636846320681}
   - component: {fileID: 8408746196200705555}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: BrokenBoxWood
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -8,7 +8,7 @@ public class EnemyManager : MonoBehaviour, IEnemyManager
     private Transform _enemy;
     private List<HpObject> _enemies = new List<HpObject>();
 
-    [SerializeField] private GameObject towerTurret;
+    [SerializeField] private GameObject _gameObject;
 
     public Transform GetPositionEnemy()
     {
@@ -17,7 +17,7 @@ public class EnemyManager : MonoBehaviour, IEnemyManager
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.GetComponent<HpObject>() == null || other.gameObject == towerTurret)
+        if (other.gameObject.GetComponent<HpObject>() == null || other.gameObject == _gameObject)
         {
             return;
         }
@@ -29,7 +29,7 @@ public class EnemyManager : MonoBehaviour, IEnemyManager
     private void OnTriggerExit2D(Collider2D other)
     {
         _enemies.Remove(other.gameObject.GetComponent<HpObject>());
-        if (_enemy == other.gameObject.transform || other.gameObject == towerTurret)
+        if (_enemy == other.gameObject.transform || other.gameObject == _gameObject)
         {
             if (_enemies.Count > 0) _enemy = ChoosingEnemy();
             _enemy = null;

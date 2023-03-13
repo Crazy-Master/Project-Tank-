@@ -31,6 +31,6 @@ public class TankControllerPlayer : MonoBehaviour
         Vector2 mouseWorldPosition = mainCamera.ScreenToWorldPoint(mousePosition);
         _tankTurretNps.RotationTurret(mouseWorldPosition);
         
-        if (Input.GetMouseButtonDown(0)) this.GetComponentInChildren<GunsController>().GunsShoot();
+        if (Input.GetMouseButtonDown(0)) this.GetComponentInChildren<IGunsController>().GunsShoot();
     }
 }

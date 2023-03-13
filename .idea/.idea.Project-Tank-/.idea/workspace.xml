@@ -3,15 +3,32 @@
   <component name="ChangeListManager">
     <list default="true" id="2d7b8136-ae43-4042-ad4c-dbf3b914d853" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Tank-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Tank-/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/Blocks.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/Blocks.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/Blocks_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/Blocks_2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/Blocks_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/Blocks_3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/Blocks_4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/Blocks_4.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/BrokenBoxWood.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/BrokenBoxWood.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/Bush.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/Bush.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/Bush_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/Bush_2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/Bush_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/Bush_3.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/Bush_4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/Bush_4.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/Bush_5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/Bush_5.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/Rock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/Rock.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/Rock_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/Rock_1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/metal-box.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/metal-box.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/wooden-box.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/wooden-box.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/TankNPC_1/TankNPC_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TankNPC_1/TankNPC_1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TankNPC_1/TankPlayer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TankNPC_1/TankPlayer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TankNPC_1/Track_1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TankNPC_1/Track_1.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test-1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test-1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovingObject/CanShoot.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovingObject/CanShoot.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovingObject/CanShootNPC.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovingObject/CanShootNPC.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovingObject/EnemyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MovingObject/EnemyManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovingObject/GunController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MovingObject/GunController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/TankControllerNPS.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/TankControllerNPS.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/TankControllerNPC.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPC/TankControllerNPC.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/TankControllerPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPC/TankControllerPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Projectile/BulletController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Projectile/BulletController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -151,6 +168,9 @@
       <workItem from="1678210944173" duration="3364000" />
       <workItem from="1678261258646" duration="10302000" />
       <workItem from="1678298934175" duration="2871000" />
+      <workItem from="1678384821351" duration="5596000" />
+      <workItem from="1678561348449" duration="2485000" />
+      <workItem from="1678706394076" duration="18523000" />
     </task>
     <servers />
   </component>

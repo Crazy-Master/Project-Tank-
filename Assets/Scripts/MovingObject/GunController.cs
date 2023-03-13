@@ -8,7 +8,7 @@ public class GunController : MonoBehaviour, IShoot
     //[SerializeField] private GameObject projectilePrefab; //что делать при разных видах снарядов (лазер)
     [SerializeField] private Transform _firePoint;
     
-    private GameObject _Base;
+    [SerializeField] private GameObject _baseCollider;
 
     private ObjectPool _bulletPool;
     private ICanShoot[] _canShoot;
@@ -36,7 +36,7 @@ public class GunController : MonoBehaviour, IShoot
             GameObject projectileOdject = _bulletPool.CreateObject(_firePoint);
             BulletController projectileBulletController = projectileOdject.gameObject.GetComponent<BulletController>();
             projectileBulletController._eBullet = bullet;
-            projectileBulletController.creatorObject = _Base;
+            projectileBulletController.creatorObject = _baseCollider;
             AnimatorGun();
         }
     }
@@ -52,6 +52,7 @@ public class GunController : MonoBehaviour, IShoot
         foreach (var canShoot in _canShoot)
         {
             var can = canShoot.CanShootNow();
+            //Debug.Log(canShoot + " "+ can);
             if (can == false || _canShootNow == false)
             {
                 _canShootNow = false;
