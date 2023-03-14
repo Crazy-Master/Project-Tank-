@@ -7,10 +7,16 @@ public class TankControllerNPC : MonoBehaviour
 {
     private Transform _enemy;
     private IEnemyManager _turretEnemyManager;
+    private ITurretRotation _turretRotation;
+    private IGunsController _gunsController;
+    private IAIPatrolStaticBehavior _aiPatrolStaticBehavior;
 
-    private void Awake()
+        private void Awake()
     {
         _turretEnemyManager = gameObject.GetComponentInChildren<IEnemyManager>();
+        _turretRotation = gameObject.GetComponentInChildren<ITurretRotation>();
+        _gunsController = gameObject.GetComponentInChildren<IGunsController>();
+        _aiPatrolStaticBehavior = gameObject.GetComponentInChildren<IAIPatrolStaticBehavior>();
     }
 
     private void FixedUpdate()
@@ -18,9 +24,11 @@ public class TankControllerNPC : MonoBehaviour
         _enemy = _turretEnemyManager.GetPositionEnemy();
         if (_enemy != null)
         {
-            gameObject.GetComponentInChildren<ITurretRotation>().RotationTurret(_enemy.position);
-            gameObject.GetComponentInChildren<IGunsController>().GunsShoot();
+            _turretRotation.RotationTurret(_enemy.position);
+            _gunsController.GunsShoot();
         }
+        else 
+            _aiPatrolStaticBehavior.PerformAction();
         
     }
 }

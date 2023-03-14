@@ -15,7 +15,7 @@ public class MainMenu : MonoBehaviour
 
     public void ExitGame()
     {
-        Debug.Log("бярюк х бшьек");
+        Debug.Log("п▓п║п╒п░п⌡ п≤ п▓п╚п╗п∙п⌡");
         Application.Quit();
     }
      

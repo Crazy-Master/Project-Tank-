@@ -11,16 +11,14 @@ public class BulletController : MonoBehaviour
     private Rigidbody2D _rb2d;
     [SerializeField] private BulletDataBase bulletDB;
     private float _timer;
-    private GameObject[] _h;
-    
 
-    
+
+
 
     private void Awake()
     {
         _rb2d = GetComponent<Rigidbody2D>();
         _timer = bulletDB.GetTimeLife(_eBullet);
-        DontDestroyOnLoad(gameObject);
     }
 
     private void Update()

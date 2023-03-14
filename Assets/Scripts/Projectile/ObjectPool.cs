@@ -6,29 +6,33 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+
 public class ObjectPool : MonoBehaviour
 {
-    public static ObjectPool instance = null;
+    public static ObjectPool instance;
     [SerializeField] private GameObject _objectToPool;
-    [SerializeField] private int _poolSizeMax = 50;
+    [SerializeField] private int _poolSizeStarting = 100;
+    //[SerializeField] private int _poolSizeMax = 100;
     
-    private Queue<GameObject> _objectPool;
+    private static Queue<GameObject> _objectPool;
     private Transform _spawnedObjectsParent;
     private void Start()
     {
         if (instance == null)
         {
             instance = this;
-            for (int i = 0; i < _poolSizeMax; i++)
-            {
-                CreateObjectInStart();
-            }
+            
         }
         else if (instance == this)
         {
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
+        
+        for (int i = 0; i < _poolSizeStarting; i++)
+        {
+            CreateObjectInStart();
+        }
     }
 
     
@@ -45,17 +49,15 @@ public class ObjectPool : MonoBehaviour
         this._objectToPool = objectToPool;
     }
 
-    public void CreateObjectInStart()
+    private void CreateObjectInStart()
     {
         CreateObjectParentIfNeeded();
         
         GameObject spawnedObject = null;
         var transform1 = instance.transform;
         spawnedObject = Instantiate(_objectToPool, transform1.position, transform1.rotation);
-        spawnedObject.name = transform.root.name + "_" + _objectToPool.name + "_" + _objectPool.Count;
+        spawnedObject.name = _objectToPool.name + "_" + _objectPool.Count; //transform.root.name + "_" + 
         spawnedObject.transform.SetParent(_spawnedObjectsParent);
-        spawnedObject.GetComponent<BulletController>().AddForceBullet();
-        spawnedObject.AddComponent<DestroyIfDisabled>();
         spawnedObject.SetActive(false);
         
         _objectPool.Enqueue(spawnedObject);
@@ -63,21 +65,19 @@ public class ObjectPool : MonoBehaviour
     
     public GameObject CreateObject(Transform firePoint)
     {
-        //CreateObjectParentIfNeeded();
-        
-        GameObject spawnedObject = null;
-        // if (_objectPool.Dequeue().activeSelf == false) // || _objectPool.Count < _poolSizeMax
+        //GameObject spawnedObject = null;
+        // if (_objectPool.Dequeue().activeSelf && _objectPool.Count < _poolSizeMax)
         // {
+        //     var transform1 = instance.transform;
         //     spawnedObject = Instantiate(_objectToPool, firePoint.position, firePoint.rotation);
-        //     spawnedObject.name = transform.root.name + "_" + _objectToPool.name + "_" + _objectPool.Count;
+        //     spawnedObject.name = _objectToPool.name + "_" + _objectPool.Count; //transform.root.name + "_" + 
         //     spawnedObject.transform.SetParent(_spawnedObjectsParent);
-        //     spawnedObject.GetComponent<BulletController>().AddForceBullet();
-        //     spawnedObject.AddComponent<DestroyIfDisabled>();
         // }
         // else
-        spawnedObject = _objectPool.Dequeue();
+        // {
+        var spawnedObject = _objectPool.Dequeue();
         spawnedObject.transform.position = firePoint.position;
-        spawnedObject.transform.rotation = firePoint.rotation;
+        spawnedObject.transform.rotation = firePoint.rotation; 
         spawnedObject.gameObject.SetActive(true);
         spawnedObject.GetComponent<BulletController>().AddForceBullet();
 
@@ -95,18 +95,4 @@ public class ObjectPool : MonoBehaviour
             else _spawnedObjectsParent = new GameObject(name).transform;
         }
     }
-    
-    // private void OnDestroy()
-    // {
-    //     foreach (var item in _objectPool)
-    //     {
-    //         if (item != null)
-    //         {
-    //             if (item.activeSelf == false)
-    //                 Destroy(item);
-    //             else
-    //                 item.GetComponent<DestroyIfDisabled>().SelfDestructionEnabled = true;
-    //         }
-    //     }
-    // }
 }

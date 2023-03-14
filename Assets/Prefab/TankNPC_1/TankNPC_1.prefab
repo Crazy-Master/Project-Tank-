@@ -424,6 +424,7 @@ GameObject:
   - component: {fileID: 5047161173273417314}
   - component: {fileID: 8017740465200535946}
   - component: {fileID: 7744862149789981199}
+  - component: {fileID: 2950864767546214969}
   m_Layer: 12
   m_Name: TankTurret
   m_TagString: Untagged
@@ -526,6 +527,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _guns:
   - {fileID: 1329760432230025244}
+--- !u!114 &2950864767546214969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7656089398037444931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 149911b3ac3695146a2dc682804e0d42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _deltaPatrolDelay: 4
 --- !u!1001 &3368156347712549218
 PrefabInstance:
   m_ObjectHideFlags: 0

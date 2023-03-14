@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TankControllerPlayer : MonoBehaviour
 {
     [SerializeField] private ITankMoveController _tankMoveNps;
     [SerializeField] private ITurretRotation _tankTurretNps;
     private Camera mainCamera;
+    private IGunsController _gunsController;
 
     private void Awake()
     {
@@ -19,6 +21,11 @@ public class TankControllerPlayer : MonoBehaviour
 
         if (_tankTurretNps == null)
             _tankTurretNps = GetComponentInChildren<ITurretRotation>();
+
+        if (_gunsController == null)
+            _gunsController = GetComponentInChildren<IGunsController>();
+
+
     }
 
     private void Update()
@@ -31,6 +38,8 @@ public class TankControllerPlayer : MonoBehaviour
         Vector2 mouseWorldPosition = mainCamera.ScreenToWorldPoint(mousePosition);
         _tankTurretNps.RotationTurret(mouseWorldPosition);
         
-        if (Input.GetMouseButtonDown(0)) this.GetComponentInChildren<IGunsController>().GunsShoot();
+        if (Input.GetMouseButtonDown(0)) _gunsController.GunsShoot();
+        
+        if (Input.GetMouseButtonDown(1)) SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

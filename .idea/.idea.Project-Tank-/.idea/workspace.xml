@@ -3,31 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="2d7b8136-ae43-4042-ad4c-dbf3b914d853" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Tank-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Tank-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/Blocks.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/Blocks.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/Blocks_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/Blocks_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/Blocks_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/Blocks_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/Blocks_4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/Blocks_4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/BrokenBoxWood.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/BrokenBoxWood.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/Bush.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/Bush.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/Bush_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/Bush_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/Bush_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/Bush_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/Bush_4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/Bush_4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/Bush_5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/Bush_5.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/Rock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/Rock.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/Rock_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/Rock_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/metal-box.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/metal-box.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Decor/wooden-box.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Decor/wooden-box.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/TankNPC_1/TankNPC_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TankNPC_1/TankNPC_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TankNPC_1/TankPlayer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/TankNPC_1/TankPlayer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TankNPC_1/Track_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/TankNPC_1/Track_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Levle-1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Levle-1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Test-1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Test-1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovingObject/EnemyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MovingObject/EnemyManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MovingObject/GunController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MovingObject/GunController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/TankControllerNPC.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPC/TankControllerNPC.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/NPC/TankControllerPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NPC/TankControllerPlayer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Projectile/BulletController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Projectile/BulletController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Projectile/ObjectPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Projectile/ObjectPool.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
@@ -42,7 +26,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.2d.tilemap@1.0.0/Editor/TileDragAndDrop.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Info/BulletInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1d3dacd00ce441dc8c61d528a2193088158400/89/4931d5ce/SceneManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1d3dacd00ce441dc8c61d528a2193088158400/bf/95d6a60f/Scene.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Ruby/Ruby Tutorial/Assets/Scripts/RubyController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MovingObject/Interface/IAIPatrolStaticBehavior.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1d3dacd00ce441dc8c61d528a2193088158400/6b/b05fb6c2/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BoxController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -64,7 +51,7 @@
     <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Standalone Player.Start Unity">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="X:\Unity\2021.3.14f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;X:\Unity Projects\2D\Project -Tank-\Project-Tank-&quot; -debugCodeOptimization" />
@@ -91,10 +78,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="2672">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="2672" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -170,7 +157,9 @@
       <workItem from="1678298934175" duration="2871000" />
       <workItem from="1678384821351" duration="5596000" />
       <workItem from="1678561348449" duration="2485000" />
-      <workItem from="1678706394076" duration="18523000" />
+      <workItem from="1678706394076" duration="21686000" />
+      <workItem from="1678778792199" duration="10815000" />
+      <workItem from="1678799443096" duration="13943000" />
     </task>
     <servers />
   </component>
