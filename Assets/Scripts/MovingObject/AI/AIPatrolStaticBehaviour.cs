@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class AIPatrolStaticBehavior : MonoBehaviour, IAIPatrolStaticBehavior
+public class AIPatrolStaticBehaviour : MonoBehaviour, IAIPatrolStaticBehaviour
 {
     [SerializeField] private float _deltaPatrolDelay = 1;
     private float _patrolDelay;
@@ -18,17 +18,17 @@ public class AIPatrolStaticBehavior : MonoBehaviour, IAIPatrolStaticBehavior
     }
     
 
-    public void PerformAction()
+    public Vector2 PerformAction()
     {
         Vector2 turret = transform.position;
-        var turretRotation = gameObject.GetComponent<ITurretRotation>();
-        turretRotation.RotationTurret(turret + _randomDirection);
         if (_newDirection)
         {
             Debug.Log("r123");
             Invoke(nameof(NewDirection), _patrolDelay);
             _newDirection = false;
         }
+        
+        return (turret + _randomDirection);
     }
     private void NewDirection()
     {

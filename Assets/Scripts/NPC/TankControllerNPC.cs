@@ -9,14 +9,15 @@ public class TankControllerNPC : MonoBehaviour
     private IEnemyManager _turretEnemyManager;
     private ITurretRotation _turretRotation;
     private IGunsController _gunsController;
-    private IAIPatrolStaticBehavior _aiPatrolStaticBehavior;
-
+    private IAIPatrolStaticBehaviour _aiPatrolStaticBehavior;
+    private Vector2 _vectorRandom;
+    [SerializeField] private AIPatrolPathBehaviour _aiPatrolPathBehaviou;
         private void Awake()
     {
         _turretEnemyManager = gameObject.GetComponentInChildren<IEnemyManager>();
         _turretRotation = gameObject.GetComponentInChildren<ITurretRotation>();
         _gunsController = gameObject.GetComponentInChildren<IGunsController>();
-        _aiPatrolStaticBehavior = gameObject.GetComponentInChildren<IAIPatrolStaticBehavior>();
+        _aiPatrolStaticBehavior = gameObject.GetComponentInChildren<IAIPatrolStaticBehaviour>();
     }
 
     private void FixedUpdate()
@@ -27,9 +28,12 @@ public class TankControllerNPC : MonoBehaviour
             _turretRotation.RotationTurret(_enemy.position);
             _gunsController.GunsShoot();
         }
-        else 
-            _aiPatrolStaticBehavior.PerformAction();
-        
+        else
+        {
+            _vectorRandom = _aiPatrolStaticBehavior.PerformAction();
+            _turretRotation.RotationTurret(_vectorRandom);
+            _aiPatrolPathBehaviou.PerformAction();
+        }
     }
 }
 
