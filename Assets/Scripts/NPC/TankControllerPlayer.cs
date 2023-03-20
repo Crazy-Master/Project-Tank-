@@ -36,6 +36,10 @@ public class TankControllerPlayer : MonoBehaviour
         Vector3 mousePosition = Input.mousePosition;
         mousePosition.z = mainCamera.nearClipPlane;
         Vector2 mouseWorldPosition = mainCamera.ScreenToWorldPoint(mousePosition);
+
+        if (Time.timeScale < 0.8f)
+            return;
+
         _tankTurretNps.RotationTurret(mouseWorldPosition);
         
         if (Input.GetMouseButtonDown(0)) _gunsController.GunsShoot();
