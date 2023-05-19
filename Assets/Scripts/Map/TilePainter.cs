@@ -20,17 +20,17 @@ public class TilePainter : MonoBehaviour
     [SerializeField] public List<TerrainLevel> terrainLevel = new List<TerrainLevel>();
 
     [ContextMenu("Paint")]
-    public void Paint(float[,] noiseMap)
+    public void Paint(float[,] terrainMap)
     {
-        for (int i = 0; i < noiseMap.GetLength(0); i++)
+        for (int i = 0; i < terrainMap.GetLength(0); i++)
         {
-            for (int j = 0; j < noiseMap.GetLength(1); j++)
+            for (int j = 0; j < terrainMap.GetLength(1); j++)
             {
                 Tile tileMap = null;
                 foreach (var level in terrainLevel)
                 {
                     // Если шум попадает в более низкий диапазон, то используем его
-                    if (noiseMap[i,j] < level.height)
+                    if (terrainMap[i,j] <= level.height)
                     {
                         tileMap = level.tile;
                         break;
