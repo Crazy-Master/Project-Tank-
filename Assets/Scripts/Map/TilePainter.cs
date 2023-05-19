@@ -1,47 +1,42 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using Random = UnityEngine.Random;
 
 public class TilePainter : MonoBehaviour
 {
     public Tilemap tilemap;
-    public Tile water, grass, sand, dirt, mountains;
-    public float sid, n, m, h, zoom1, zoom2;
+    public float sid, n, zoom1;
+    
+    [Serializable]
+    public struct TerrainLevel
+    {
+        public string name;
+        public float height;
+        public Tile tile;
+        public Color color;
+    }
+    [SerializeField] public List<TerrainLevel> terrainLevel = new List<TerrainLevel>();
 
     [ContextMenu("Paint")]
-    void Paint()
+    public void Paint(float[,] noiseMap)
     {
-        sid = Random.Range(0, 9999999);
-        for (int i = 0; i < 200; i++)
+        for (int i = 0; i < noiseMap.GetLength(0); i++)
         {
-            for (int j = 0; j < 200; j++)
+            for (int j = 0; j < noiseMap.GetLength(1); j++)
             {
-                h = Mathf.PerlinNoise((i + sid) / zoom1, (j + sid) / zoom1);
-                m = Mathf.PerlinNoise((i + sid) / zoom2, (j + sid) / zoom2);
-                n = h * m;
-                
-                if (n < 0.2)
+                Tile tileMap = null;
+                foreach (var level in terrainLevel)
                 {
-                    tilemap.SetTile(new Vector3Int(i, j, 0), water);
+                    // Если шум попадает в более низкий диапазон, то используем его
+                    if (noiseMap[i,j] < level.height)
+                    {
+                        tileMap = level.tile;
+                        break;
+                    }
                 }
-                else if (n > 0.2 && n <0.4)
-                {
-                    tilemap.SetTile(new Vector3Int(i, j, 0), grass);
-                }
-                else if (n > 0.4 && n <0.6)
-                {
-                    tilemap.SetTile(new Vector3Int(i, j, 0), sand);
-                }
-                else if (n > 0.6 && n <0.8)
-                {
-                    tilemap.SetTile(new Vector3Int(i, j, 0), dirt);
-                }
-                else
-                {
-                    tilemap.SetTile(new Vector3Int(i, j, 0), mountains);
-                }
+                tilemap.SetTile(new Vector3Int(i, j, 0), tileMap);
             }
         }
     }
