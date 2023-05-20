@@ -42,9 +42,9 @@ public class NoiseMap : MonoBehaviour
     [ContextMenu("Restart")]
     private void Restart()
     {
-        seed = Random.Range(0, 999999);
+        //seed = Random.Range(0, 999999);
         GenerateTerrain();
-        GenerateObstacles();
+        //GenerateObstacles();
     }
     
     public void GenerateTerrain()

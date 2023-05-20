@@ -11,7 +11,7 @@ public static float[,] GenerateNoiseMap(int width, int height, int seed, float s
 
         // Порождающий элемент
         System.Random rand = new System.Random(seed);
-
+        
         // Сдвиг октав, чтобы при наложении друг на друга получить более интересную картинку
         Vector2[] octavesOffset = new Vector2[octaves];
         for (int i = 0; i < octaves; i++)
@@ -19,7 +19,7 @@ public static float[,] GenerateNoiseMap(int width, int height, int seed, float s
             // Учитываем внешний сдвиг положения
             float xOffset = rand.Next(-100000, 100000) + offset.x;
             float yOffset = rand.Next(-100000, 100000) + offset.y;
-            octavesOffset[i] = new Vector2(xOffset / width, yOffset / height);
+            octavesOffset[i] = new Vector2(xOffset / scale, yOffset / scale);
         }
 
         if (scale < 0)
