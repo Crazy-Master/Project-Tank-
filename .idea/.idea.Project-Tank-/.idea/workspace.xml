@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2d7b8136-ae43-4042-ad4c-dbf3b914d853" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project-Tank-/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project-Tank-/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/NoiseMap.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/NoiseMap.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/TilePainter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/TilePainter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestMap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestMap.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/ObstaclesPainter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/ObstaclesPainter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +167,7 @@
       <workItem from="1684346005110" duration="1320000" />
       <workItem from="1684399266633" duration="10991000" />
       <workItem from="1684498615272" duration="4541000" />
+      <workItem from="1684570181150" duration="2368000" />
     </task>
     <servers />
   </component>
