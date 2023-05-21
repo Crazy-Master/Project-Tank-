@@ -17,7 +17,7 @@ public static class TestNoiseMapGenerator
             // Учитываем внешний сдвиг положения
             float xOffset = rand.Next(-100000, 100000) + offset.x;
             float yOffset = rand.Next(-100000, 100000) + offset.y;
-            octavesOffset[i] = new Vector2(xOffset / width, yOffset / height);
+            octavesOffset[i] = new Vector2(xOffset / scale, yOffset / scale);
         }
 
         if (scale < 0)
