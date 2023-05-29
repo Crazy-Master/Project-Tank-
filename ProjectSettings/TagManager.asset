@@ -63,6 +63,12 @@ TagManager:
   - name: Bullets
     uniqueID: 1027084981
     locked: 0
+  - name: Bush
+    uniqueID: 2257962843
+    locked: 0
+  - name: Tree
+    uniqueID: 1976429227
+    locked: 0
   - name: SpecialEffects
     uniqueID: 2558449455
     locked: 0

@@ -44,24 +44,33 @@ public class NoiseMap : MonoBehaviour
     {
         //seed = Random.Range(0, 999999);
         GenerateTerrain();
-        //GenerateObstacles();
+        GenerateObstacles();
     }
     
     public void GenerateTerrain()
     {
         var gT = generate[0];
+        var gy = generate[1];
         // Генерируем карту
         terrainMap = NoiseMapGenerator.GenerateNoiseMap(gT.width, gT.height, seed, gT.scale, gT.octaves, gT.persistence, gT.lacunarity, gT.offset);
-        tilePainter.Paint(terrainMap);
+        var terrainType = NoiseMapGenerator.GenerateNoiseMap(gy.width, gy.height, seed, gy.scale, gy.octaves, gy.persistence, gy.lacunarity, gy.offset);
+        tilePainter.PaintTerrain(terrainMap, terrainType);
     }
     
     public void GenerateObstacles()
     {
-        var gT = generate[1];
-        var gY = generate[2];
-        // Генерируем карту
-        var obstacles1Map = NoiseMapGenerator.GenerateNoiseMap(gT.width, gT.height, seed, gT.scale, gT.octaves, gT.persistence, gT.lacunarity, gT.offset);
-        var obstacles2Map = NoiseMapGenerator.GenerateNoiseMap(gY.width, gY.height, seed, gY.scale, gY.octaves, gY.persistence, gY.lacunarity, gY.offset);
-        obstaclesPainter.Paint(terrainMap, obstacles1Map, obstacles2Map);
+        var gB = generate[2];
+        var gD = generate[3];
+        var gE = generate[4];
+        var gC = generate[5];
+        var gR = generate[6];
+        
+        var obstaclesB = NoiseMapGenerator.GenerateNoiseMap(gB.width, gB.height, seed, gB.scale, gB.octaves, gB.persistence, gB.lacunarity, gB.offset);
+        var obstaclesD = NoiseMapGenerator.GenerateNoiseMap(gD.width, gD.height, seed, gD.scale, gD.octaves, gD.persistence, gD.lacunarity, gD.offset);
+        var obstaclesE = NoiseMapGenerator.GenerateNoiseMap(gE.width, gE.height, seed, gE.scale, gE.octaves, gE.persistence, gE.lacunarity, gE.offset);
+        var obstaclesC = NoiseMapGenerator.GenerateNoiseMap(gC.width, gC.height, seed, gC.scale, gC.octaves, gC.persistence, gC.lacunarity, gC.offset);
+        var obstaclesR = NoiseMapGenerator.GenerateNoiseMap(gR.width, gR.height, seed, gR.scale, gR.octaves, gR.persistence, gR.lacunarity, gR.offset);
+        
+        obstaclesPainter.PaintObstacles(terrainMap, obstaclesB, obstaclesD,obstaclesE,obstaclesC,obstaclesR);
     }
 }

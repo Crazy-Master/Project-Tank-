@@ -14,13 +14,14 @@ public class TilePainter : MonoBehaviour
     {
         public string name;
         public float height;
-        public Tile tile;
+        public Tile tile1;
+        public Tile tile2;
         public Color color;
     }
     [SerializeField] public List<TerrainLevel> terrainLevel = new List<TerrainLevel>();
 
     [ContextMenu("Paint")]
-    public void Paint(float[,] terrainMap)
+    public void PaintTerrain(float[,] terrainMap, float[,] terrainType)
     {
         for (int i = 0; i < terrainMap.GetLength(0); i++)
         {
@@ -32,7 +33,10 @@ public class TilePainter : MonoBehaviour
                     // Если шум попадает в более низкий диапазон, то используем его
                     if (terrainMap[i,j] <= level.height)
                     {
-                        tileMap = level.tile;
+                        if (terrainType[i, j] < 0.5)
+                            tileMap = level.tile1;
+                        else
+                            tileMap = level.tile2;
                         break;
                     }
                 }
@@ -40,4 +44,5 @@ public class TilePainter : MonoBehaviour
             }
         }
     }
+    
 }
